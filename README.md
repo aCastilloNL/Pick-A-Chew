@@ -1,4 +1,4 @@
-# Second project with Wild Code School : Pick-a-Chew
+# Pick-a-Chew [2nd Project for Wild Code School]
 ![Javascript](https://aleen42.github.io/badges/src/javascript.svg)
 ![React](https://aleen42.github.io/badges/src/react.svg)
 ![Npm](https://aleen42.github.io/badges/src/npm.svg)
