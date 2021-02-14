@@ -1,20 +1,20 @@
-# Pick-a-Chew [2nd Project for Wild Code School]
+# Pick-a-Chew [2nd Project for WCS]
 ![Javascript](https://aleen42.github.io/badges/src/javascript.svg)
 ![React](https://aleen42.github.io/badges/src/react.svg)
 ![Npm](https://aleen42.github.io/badges/src/npm.svg)
 
-## Created by :
+## Developed by :
 - Fabien Lallement https://github.com/Befa222
 - Alfred Castillo https://github.com/aCastilloNL
 - Jeanloup Cayuela https://github.com/j-loup30400
 
 ## Table of Contents
-- [Purpose](#purpose)
+- [Scope](#scope)
 - [Install](#install)
 - [Packages and Softwares used](#packages-and-softwares-used)
 
-## Purpose
-2-month project using React and REST APIs for the first time. We decided to create a simple food app which allows the user to discover food recipes with the ingredients in their own fridge.
+## Scope
+2-month project utilizing React and REST APIs for the first time. A simple food app which allows users to discover food recipes complete with step-by-step instructions using only the ingredients available in their own kitchen.
 
 ## Install
 ```bash
