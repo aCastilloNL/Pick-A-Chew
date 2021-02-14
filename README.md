@@ -4,9 +4,9 @@
 ![Npm](https://aleen42.github.io/badges/src/npm.svg)
 
 ## Created by :
+- Fabien Lallement https://github.com/Befa222
 - Alfred Castillo https://github.com/aCastilloNL
 - Jeanloup Cayuela https://github.com/j-loup30400
-- Fabien Lallement https://github.com/Befa222
 
 ## Table of Contents
 - [Purpose](#purpose)
