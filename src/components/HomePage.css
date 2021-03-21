@@ -1,201 +1,189 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-@media only screen and (max-width: 768px) and (min-width:280px) {
-	@font-face {
-		font-family: Pokemon Solid;
-		src: url('../fonts/Pokemon\ Solid.ttf');
-	}
-body{
-	background-color: rgb(248, 248, 196);
-}
-.home{
-	background-image: url("../images/homeBackgroumd.gif");
-	background-position: center;
-	background-size: contain;
-	min-height: 97vh;
-	padding-top: 8px;
-}
-.homeTitle{
-	margin-bottom: 0.6rem;
-	margin-top: 0;
-	-webkit-text-stroke: 1px rgb(10, 96, 175);
-	font-family: Pokemon solid;
-	-webkit-text-stroke: 1px rgb(10, 96, 175);
-	font-size: 55px;
-	text-align: center;
-	color: #FFCC01;
-	text-shadow: -7px -3px rgb(10, 41, 96), 3px 7px rgb(10, 96, 175);
-}
-.pikachuHome{
-	margin-bottom:10%;
-	width :60%;
-	height: auto;
-	padding-left:7px;
-	align-self:center;
-}
-#deskPika {
-	display: none;
-}
-.pikaContHome{
-	display: flex;
-	flex-direction: column;
-}
-.typerDiv{
-	background-image: url('../images/pokebubblebox.png');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	margin-left: 15%;
-	margin-right: 15%;
-	margin-bottom: 10%;
-}
-.bubbleText{
-	border: 2px solid black;
-	background-color: rgb(255, 191, 218);
-	border-radius: 5px;
-	height: 70px;
-	font-family: 'Press Start 2P', cursive;
-	font-size: 95%;
-	margin-left: 6%;
-	margin-right: 6%;
-	padding: 3%;
-}
-.homeButton{
-	font-family: 'Press Start 2P', cursive;
-	letter-spacing: 2px;
-	height: 50px;
-	width:80%;
-	margin-left: 10%;
-	font-size: 14px;
-	background-color: rgba(255, 191, 218, 0.701);
-	padding-top: 3%;
-	padding-bottom: 3%;
-	border-radius: 30px;
-	border-color:black;
-}
-.homeButton:active {
-	background-color: rgb(255, 191, 218);
-	opacity: 0.5;
-	border:2px solid white;
-}
-.subTitleDesktop{
-	display: none;
-}
-.homeButtonDesktop{
-	display:none;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@media only screen and (max-width: 768px) and (min-width: 280px) {
+  @font-face {
+    font-family: Pokemon Solid;
+    src: url("../fonts/Pokemon\ Solid.ttf");
+  }
+  body {
+    background-color: rgb(248, 248, 196);
+  }
+  .home {
+    background-image: url("../images/homeBackground.gif");
+    background-position: center;
+    background-size: contain;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+  }
+  .homeTitle {
+    margin-bottom: 0.6rem;
+    margin-top: 0;
+    -webkit-text-stroke: 1px rgb(10, 96, 175);
+    font-family: Pokemon solid;
+    font-size: 55px;
+    text-align: center;
+    color: #ffcc01;
+    text-shadow: -7px -3px rgb(10, 41, 96), 3px 7px rgb(10, 96, 175);
+  }
+  .pikachuHome {
+    margin-bottom: 10%;
+    width: 60%;
+    height: auto;
+    padding-left: 7px;
+    align-self: center;
+  }
+  .pikaContHome {
+    display: flex;
+    flex-direction: column;
+  }
+  .typerDiv {
+    background-image: url("../images/pokebubblebox.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 0 15%;
+  }
+  .bubbleText {
+    border: 2px solid black;
+    background-color: rgb(255, 191, 218);
+    border-radius: 5px;
+    height: 70px;
+    font-family: "Press Start 2P", cursive;
+    font-size: 95%;
+    margin: 6%;
+    padding: 3%;
+  }
+  .homeButton {
+    font-family: "Press Start 2P", cursive;
+    letter-spacing: 2px;
+    height: 50px;
+    width: 80%;
+    margin: .5rem 10%;
+    font-size: 14px;
+    background-color: rgba(255, 191, 218, 0.701);
+    padding: 3% 6px;
+    border-radius: 30px;
+    border-color: black;
+  }
+  .homeButton:active {
+    background-color: rgb(255, 191, 218);
+    opacity: 0.5;
+    border: 2px solid white;
+  }
+  #deskPika,
+  .subTitleDesktop,
+  .homeButtonDesktop {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 338px) {
-	.homeTitle{
-		font-size : 45px;
-	}
-	.bubbleText{
-		font-size: 13px;
-	}
+  .homeTitle {
+    font-size: 45px;
+  }
+  .bubbleText {
+    font-size: 13px;
+  }
 }
-@media only screen and (min-width:600px) {
-	.homeTitle{
-		font-size: 85px;
-	}
-	.bubbleText{
-		height: 100px;
-		font-size: 140%;
-	}
-	.home-button{
-		height: 70px;
-		font-size: 25px;
-		margin-bottom: 8%;
-	}
+@media only screen and (min-width: 600px) {
+  .homeTitle {
+    font-size: 85px;
+  }
+  .bubbleText {
+    height: 100px;
+    font-size: 140%;
+  }
+  .home-button {
+    height: 70px;
+    font-size: 25px;
+    margin-bottom: 8%;
+  }
 }
 
-				/* DESKTOP VERSION STARTS BELOW*/
+/* DESKTOP VERSION STARTS BELOW*/
 
-
-@media only screen and (min-width:769px) and (max-width:1920px) {
-	@font-face {
-		font-family: 'hashedbrowns';
-		src: url('../fonts/HashedBrowns-WyJgn.ttf');
-	}
-body{
-	background-color: rgb(255,255,255);
-	background-image: url('../images/homeBackground.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-}
-.homeTitle{
-	-webkit-text-stroke: 0.1px rgb(255, 45, 45);
-	font-family: hashedbrowns;
-	font-size: 4rem;
-	margin-bottom: 0;
-	margin-top: 0;
-	/* color: rgb(252, 252, 125); */
-	color: rgb(252, 252, 125);
-	position:absolute;
-	top:0.3em;
-	left:12.5%;
-}
-.subTitleDesktop{
-	color:black;
-	position: absolute;
-	top: 15%;
-	left: 50px;
-	right: 37%;
-	max-width: 46%;
-	min-width: 45%;
-	text-align: center;
-	letter-spacing: 1.5px;
-	line-height: 1.8;
-}
-h5 span {
-	margin-left: 30px;
-	display: block;
-}
-#deskPika {
-	position:absolute;
-	top: 50%;
-	left: 23%;
-	width: 17%;
-}
-.pikachuHome{
-	display: none;
-}
-.pikaContHome{
-	display: flex;
-	flex-direction: row;
-}
-.bubbleText{
-	display: none;
-} 
-.homeButton{
-	display:none;
-}
-.homeButtonDesktop{
-	font-family: 'Roboto';
-	margin-left: 16%;
-	width: 25%;
-	height: 35px;
-	font-size: 16px;
-	letter-spacing: 1.7px;
-	font-weight: 500;
-	background: transparent;
-	border-radius: 25px;
-	border: 2px solid black;
-	margin-bottom: 5%;
-	position: absolute;
-	bottom:0;
-}
-.homeButtonDesktop:hover {
-	cursor: pointer;
-	box-shadow: 0 0 15px #ffe659;
-	border: 2px solid #ffff86;
-	color:rgb(252, 252, 125);
-	background: rgba(60, 60, 60, 0.194);
-	-webkit-transition-duration: 0.4s; 
-  	transition-duration: 0.4s;
-}
-.homeButtonDesktop:after {
-	opacity: 0;
-	background:rgb(255,255,255);
-	transition: all 0.8s;
-}
+@media only screen and (min-width: 769px) and (max-width: 1920px) {
+  @font-face {
+    font-family: "hashedbrowns";
+    src: url("../fonts/HashedBrowns-WyJgn.ttf");
+  }
+  body {
+    background-color: rgb(255, 255, 255);
+    background-image: url("../images/homeBackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .homeTitle {
+    -webkit-text-stroke: 0.1px rgb(255, 45, 45);
+    font-family: hashedbrowns;
+    font-size: 4rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    /* color: rgb(252, 252, 125); */
+    color: rgb(252, 252, 125);
+    position: absolute;
+    top: 0.3em;
+    left: 12.5%;
+  }
+  .subTitleDesktop {
+    color: black;
+    position: absolute;
+    top: 15%;
+    left: 50px;
+    right: 37%;
+    max-width: 46%;
+    min-width: 45%;
+    text-align: center;
+    letter-spacing: 1.5px;
+    line-height: 1.8;
+  }
+  h5 span {
+    margin-left: 30px;
+    display: block;
+  }
+  #deskPika {
+    position: absolute;
+    top: 50%;
+    left: 23%;
+    width: 17%;
+  }
+  .pikachuHome,
+  .bubbleText,
+  .homeButton {
+    display: none;
+  }
+  .pikaContHome {
+    display: flex;
+    flex-direction: row;
+  }
+  .homeButtonDesktop {
+    font-family: "Roboto";
+    margin-left: 16%;
+    width: 25%;
+    height: 35px;
+    font-size: 16px;
+    letter-spacing: 1.7px;
+    font-weight: 500;
+    background: transparent;
+    border-radius: 25px;
+    border: 2px solid black;
+    margin-bottom: 5%;
+    position: absolute;
+    bottom: 0;
+  }
+  .homeButtonDesktop:hover {
+    cursor: pointer;
+    box-shadow: 0 0 15px #ffe659;
+    border: 2px solid #ffff86;
+    color: rgb(252, 252, 125);
+    background: rgba(60, 60, 60, 0.194);
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+  .homeButtonDesktop:after {
+    opacity: 0;
+    background: rgb(255, 255, 255);
+    transition: all 0.8s;
+  }
 }
