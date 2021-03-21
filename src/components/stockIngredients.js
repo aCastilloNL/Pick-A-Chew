@@ -1,1 +1,1 @@
-export let stock=[]
+export let stock = [];

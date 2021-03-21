@@ -1,394 +1,501 @@
-import meat from '../images/meatIcon.png'
-import fish from '../images/fish-icon2.png'
-import vege from '../images/vegetablesIcon.png'
-import fruit from '../images/fruitsIcon.png'
-import dairy from '../images/dairyIcon.png'
-import grain from '../images/grainIcon.png'
-import herb from '../images/herb&spiceIcon.png'
-import sauce from '../images/sauceIcons.png'
+import meat from "../images/meatIcon.png";
+import fish from "../images/fish-icon2.png";
+import vege from "../images/vegetablesIcon.png";
+import fruit from "../images/fruitsIcon.png";
+import dairy from "../images/dairyIcon.png";
+import grain from "../images/grainIcon.png";
+import herb from "../images/herb&spiceIcon.png";
+import sauce from "../images/sauceIcons.png";
 
 export let fridge = {
   list: [
     {
-      category: 'Meats',
+      category: "Meats",
       image: meat,
-      ingredients:
-        [
-          {
-            value: 'Beef', label: 'Beef'
-          },
-          {
-            value: 'Chicken', label: 'Chicken'
-          },
-          {
-            value: 'Lamb', label: 'Lamb'
-          },
-          {
-            value: 'Turkey', label: 'Turkey'
-          },
-          {
-            value: 'Pork', label: 'Pork'
-          },
-          {
-            value: 'Duck', label: 'Duck'
-          },
-          {
-            value: 'Veal', label: 'Veal'
-          },
-          {
-            value: 'Ham', label: 'Ham'
-          }
-        ]
+      ingredients: [
+        {
+          value: "Beef",
+          label: "Beef",
+        },
+        {
+          value: "Chicken",
+          label: "Chicken",
+        },
+        {
+          value: "Lamb",
+          label: "Lamb",
+        },
+        {
+          value: "Turkey",
+          label: "Turkey",
+        },
+        {
+          value: "Pork",
+          label: "Pork",
+        },
+        {
+          value: "Duck",
+          label: "Duck",
+        },
+        {
+          value: "Veal",
+          label: "Veal",
+        },
+        {
+          value: "Ham",
+          label: "Ham",
+        },
+      ],
     },
     {
-      category: 'Fish',
+      category: "Fish",
       image: fish,
       ingredients: [
         {
-          value: 'Salmon', label: 'Salmon'
+          value: "Salmon",
+          label: "Salmon",
         },
         {
-          value: 'Tuna', label: 'Tuna'
+          value: "Tuna",
+          label: "Tuna",
         },
         {
-          value: 'Cod', label: 'Cod'
+          value: "Cod",
+          label: "Cod",
         },
         {
-          value: 'Haddock', label: 'Haddock'
+          value: "Haddock",
+          label: "Haddock",
         },
         {
-          value: 'Hake', label: 'Hake'
+          value: "Hake",
+          label: "Hake",
         },
         {
-          value: 'Herring', label: 'Herring'
+          value: "Herring",
+          label: "Herring",
         },
         {
-          value: 'Mackerel', label: 'Mackerel'
+          value: "Mackerel",
+          label: "Mackerel",
         },
         {
-          value: 'Whiting', label: 'Whiting'
+          value: "Whiting",
+          label: "Whiting",
         },
         {
-          value: 'Squid', label: 'Squid'
+          value: "Squid",
+          label: "Squid",
         },
         {
-          value: 'Sardine', label: 'Sardine'
+          value: "Sardine",
+          label: "Sardine",
         },
         {
-          value: 'Crab', label: 'Crab'
+          value: "Crab",
+          label: "Crab",
         },
         {
-          value: 'Octopus', label: 'Octopus'
+          value: "Octopus",
+          label: "Octopus",
         },
         {
-          value: 'Lobster', label: 'Lobster'
+          value: "Lobster",
+          label: "Lobster",
         },
         {
-          value: 'Snails', label: 'Snails'
-        }
-      ]
+          value: "Snails",
+          label: "Snails",
+        },
+      ],
     },
     {
-      category: 'Vegetables',
+      category: "Vegetables",
       image: vege,
       ingredients: [
         {
-          value: 'Tomato', label: 'Tomato'
+          value: "Tomato",
+          label: "Tomato",
         },
         {
-          value: 'Courgette', label: 'Courgette'
+          value: "Courgette",
+          label: "Courgette",
         },
         {
-          value: 'Leeks', label: 'Leeks'
+          value: "Leeks",
+          label: "Leeks",
         },
         {
-          value: 'Peppers', label: 'Peppers'
+          value: "Peppers",
+          label: "Peppers",
         },
         {
-          value: 'Jalapeños', label: 'Jalapeños'
+          value: "Jalapeños",
+          label: "Jalapeños",
         },
         {
-          value: 'Broccoli', label: 'Broccoli'
+          value: "Broccoli",
+          label: "Broccoli",
         },
         {
-          value: 'Cauliflower', label: 'Cauliflower'
+          value: "Cauliflower",
+          label: "Cauliflower",
         },
         {
-          value: 'Cucumber', label: 'Cucumber'
+          value: "Cucumber",
+          label: "Cucumber",
         },
         {
-          value: 'Eggplant', label: 'Eggplant'
+          value: "Eggplant",
+          label: "Eggplant",
         },
         {
-          value: 'Pumpkin', label: 'Pumpkin'
+          value: "Pumpkin",
+          label: "Pumpkin",
         },
         {
-          value: 'Potato', label: 'Potato'
+          value: "Potato",
+          label: "Potato",
         },
         {
-          value: 'Mushrooms', label: 'Mushrooms'
+          value: "Mushrooms",
+          label: "Mushrooms",
         },
         {
-          value: 'Brussels sprouts', label: 'Brussels sprouts'
+          value: "Brussels sprouts",
+          label: "Brussels sprouts",
         },
         {
-          value: 'Carrot', label: 'Carrot'
+          value: "Carrot",
+          label: "Carrot",
         },
         {
-          value: 'Beetroot', label: 'Beetroot'
+          value: "Beetroot",
+          label: "Beetroot",
         },
         {
-          value: 'Spinach', label: 'Spinach'
+          value: "Spinach",
+          label: "Spinach",
         },
         {
-          value: 'Lettuce', label: 'Lettuce'
+          value: "Lettuce",
+          label: "Lettuce",
         },
         {
-          value: 'Sweet potato', label: 'Sweet potato'
+          value: "Sweet potato",
+          label: "Sweet potato",
         },
         {
-          value: 'Sweet corn', label: 'Sweet corn'
+          value: "Sweet corn",
+          label: "Sweet corn",
         },
         {
-          value: 'Beans', label: 'Beans'
+          value: "Beans",
+          label: "Beans",
         },
         {
-          value: 'Asparagus', label: 'Asparagus'
+          value: "Asparagus",
+          label: "Asparagus",
         },
         {
-          value: 'Bellpepper', label: 'Bellpepper'
-        }
-      ]
+          value: "Bellpepper",
+          label: "Bellpepper",
+        },
+      ],
     },
     {
-      category: 'Fruits',
+      category: "Fruits",
       image: fruit,
       ingredients: [
         {
-          value: 'Banana', label: 'Banana'
+          value: "Banana",
+          label: "Banana",
         },
         {
-          value: 'Apple', label: 'Apple'
+          value: "Apple",
+          label: "Apple",
         },
         {
-          value: 'Orange', label: 'Orange'
+          value: "Orange",
+          label: "Orange",
         },
         {
-          value: 'Cherry', label: 'Cherry'
+          value: "Cherry",
+          label: "Cherry",
         },
         {
-          value: 'Plum', label: 'Plum'
+          value: "Plum",
+          label: "Plum",
         },
         {
-          value: 'Apricot', label: 'Apricot'
+          value: "Apricot",
+          label: "Apricot",
         },
         {
-          value: 'Pear', label: 'Pear'
+          value: "Pear",
+          label: "Pear",
         },
         {
-          value: 'Peach', label: 'Peach'
+          value: "Peach",
+          label: "Peach",
         },
         {
-          value: 'Watermelon', label: 'Watermelon'
+          value: "Watermelon",
+          label: "Watermelon",
         },
         {
-          value: 'Lemon', label: 'Lemon'
+          value: "Lemon",
+          label: "Lemon",
         },
         {
-          value: 'Lime', label: 'Lime'
+          value: "Lime",
+          label: "Lime",
         },
         {
-          value: 'Grapefruit', label: 'Grapefruit'
+          value: "Grapefruit",
+          label: "Grapefruit",
         },
         {
-          value: 'Mango', label: 'Mango'
+          value: "Mango",
+          label: "Mango",
         },
         {
-          value: 'Lychee', label: 'Lychee'
+          value: "Lychee",
+          label: "Lychee",
         },
         {
-          value: 'Passion fruit', label: 'Passion fruit'
+          value: "Passion fruit",
+          label: "Passion fruit",
         },
         {
-          value: 'Strawberry', label: 'Strawberry'
+          value: "Strawberry",
+          label: "Strawberry",
         },
         {
-          value: 'Raspberry', label: 'Raspberry'
+          value: "Raspberry",
+          label: "Raspberry",
         },
         {
-          value: 'Pineapple', label: 'Pineapple'
+          value: "Pineapple",
+          label: "Pineapple",
         },
         {
-          value: 'Kiwi', label: 'Kiwi'
+          value: "Kiwi",
+          label: "Kiwi",
         },
         {
-          value: 'Coconut', label: 'Coconut'
-        }
-
-      ]
+          value: "Coconut",
+          label: "Coconut",
+        },
+      ],
     },
     {
-      category: 'Dairy',
+      category: "Dairy",
       image: dairy,
       ingredients: [
         {
-          value: 'Butter', label: 'Butter'
+          value: "Butter",
+          label: "Butter",
         },
         {
-          value: 'Milk', label: 'Milk'
+          value: "Milk",
+          label: "Milk",
         },
         {
-          value: 'Cream', label: 'Cream'
+          value: "Cream",
+          label: "Cream",
         },
         {
-          value: 'Yogurt', label: 'Yogurt'
+          value: "Yogurt",
+          label: "Yogurt",
         },
         {
-          value: 'Cheese', label: 'Cheese'
+          value: "Cheese",
+          label: "Cheese",
         },
         {
-          value: 'Ice cream', label: 'Ice cream'
+          value: "Ice cream",
+          label: "Ice cream",
         },
         {
-          value: 'Eggs', label: 'Eggs'
-        }
-      ]
+          value: "Eggs",
+          label: "Eggs",
+        },
+      ],
     },
     {
-      category: 'Grains',
+      category: "Grains",
       image: grain,
       ingredients: [
         {
-          value: 'Pasta', label: 'Pasta'
+          value: "Pasta",
+          label: "Pasta",
         },
         {
-          value: 'Rice', label: 'Rice'
+          value: "Rice",
+          label: "Rice",
         },
         {
-          value: 'Couscous', label: 'Couscous'
+          value: "Couscous",
+          label: "Couscous",
         },
         {
-          value: 'Flour', label: 'Flour'
+          value: "Flour",
+          label: "Flour",
         },
         {
-          value: 'Yeast', label: 'Yeast'
+          value: "Yeast",
+          label: "Yeast",
         },
         {
-          value: 'Bread', label: 'Bread'
+          value: "Bread",
+          label: "Bread",
         },
         {
-          value: 'Tortilla', label: 'Tortilla'
+          value: "Tortilla",
+          label: "Tortilla",
         },
         {
-          value: 'Sugar', label: 'Sugar'
-        }
-
-      ]
+          value: "Sugar",
+          label: "Sugar",
+        },
+      ],
     },
     {
-      category: 'Herbs & Spices',
+      category: "Herbs & Spices",
       image: herb,
       ingredients: [
         {
-          value: 'Salt', label: 'Salt'
+          value: "Salt",
+          label: "Salt",
         },
         {
-          value: 'Pepper', label: 'Pepper'
+          value: "Pepper",
+          label: "Pepper",
         },
         {
-          value: 'Garlic', label: 'Garlic'
+          value: "Garlic",
+          label: "Garlic",
         },
         {
-          value: 'Onion', label: 'Onion'
+          value: "Onion",
+          label: "Onion",
         },
         {
-          value: 'Rosemary', label: 'Rosemary'
+          value: "Rosemary",
+          label: "Rosemary",
         },
         {
-          value: 'Parsley', label: 'Parsley'
+          value: "Parsley",
+          label: "Parsley",
         },
         {
-          value: 'Ginger', label: 'Ginger'
+          value: "Ginger",
+          label: "Ginger",
         },
         {
-          value: 'Mint', label: 'Mint'
+          value: "Mint",
+          label: "Mint",
         },
         {
-          value: 'Chili peppers', label: 'Chili peppers'
+          value: "Chili peppers",
+          label: "Chili peppers",
         },
         {
-          value: 'Thym', label: 'Thym'
+          value: "Thym",
+          label: "Thym",
         },
         {
-          value: 'Vinegar', label: 'Vinegar'
+          value: "Vinegar",
+          label: "Vinegar",
         },
         {
-          value: 'Mustard', label: 'Mustard'
+          value: "Mustard",
+          label: "Mustard",
         },
         {
-          value: 'Basil', label: 'basil'
+          value: "Basil",
+          label: "basil",
         },
         {
-          value: 'Oregano', label: 'Oregano'
+          value: "Oregano",
+          label: "Oregano",
         },
         {
-          value: 'Shallot', label: 'Shallot'
+          value: "Shallot",
+          label: "Shallot",
         },
         {
-          value: 'Paprika', label: 'Paprika'
+          value: "Paprika",
+          label: "Paprika",
         },
         {
-          value: 'Black Pepper', label: 'Black Pepper'
+          value: "Black Pepper",
+          label: "Black Pepper",
         },
         {
-          value: 'White Pepper', label: 'White Pepper'
-        }
-      ]
+          value: "White Pepper",
+          label: "White Pepper",
+        },
+      ],
     },
     {
-      category: 'Sauces',
+      category: "Sauces",
       image: sauce,
       ingredients: [
         {
-          value: 'Mayonnaise', label: 'Mayonnaise'
+          value: "Mayonnaise",
+          label: "Mayonnaise",
         },
         {
-          value: 'Ketchup', label: 'Ketchup'
+          value: "Ketchup",
+          label: "Ketchup",
         },
         {
-          value: 'Tomato sauce', label: 'Tomato sauce'
+          value: "Tomato sauce",
+          label: "Tomato sauce",
         },
         {
-          value: 'Aioli', label: 'Aioli'
+          value: "Aioli",
+          label: "Aioli",
         },
         {
-          value: 'Bbq', label: 'Bbq'
+          value: "Bbq",
+          label: "Bbq",
         },
         {
-          value: 'Pesto', label: 'Pesto'
+          value: "Pesto",
+          label: "Pesto",
         },
         {
-          value: 'Soy sauce', label: 'Soy sauce'
+          value: "Soy sauce",
+          label: "Soy sauce",
         },
         {
-          value: 'Tabasco', label: 'Tabasco'
+          value: "Tabasco",
+          label: "Tabasco",
         },
         {
-          value: 'Oyster sauce', label: 'Oyster sauce'
+          value: "Oyster sauce",
+          label: "Oyster sauce",
         },
         {
-          value: 'Salsa', label: 'Salsa'
+          value: "Salsa",
+          label: "Salsa",
         },
         {
-          value: 'Harissa', label: 'Harissa'
+          value: "Harissa",
+          label: "Harissa",
         },
         {
-          value: 'Thousand Island Dressing', label:'Thousand Island Dressing'
+          value: "Thousand Island Dressing",
+          label: "Thousand Island Dressing",
         },
         {
-          value: 'Sriracha', label: 'Sriracha'
-        }
-      ]
-    }
-  ]
-}
+          value: "Sriracha",
+          label: "Sriracha",
+        },
+      ],
+    },
+  ],
+};

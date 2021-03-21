@@ -14,7 +14,7 @@ class HomePage extends Component {
     showHome: true,
   };
 
-  mealTimes = ["dinner", "breakfast", "brunch", "supper", "lunch" ];
+  mealTimes = ["dinner", "breakfast", "brunch", "supper", "lunch"];
 
   mealTimeGenerator = () => {
     let meal = this.mealTimes[counter];
@@ -52,7 +52,8 @@ class HomePage extends Component {
             <h1 className="homeTitle">Pick-a-Chew</h1>
             <h5 className="subTitleDesktop">
               <span>
-              Don't know what to make for {!this.state.mealTime ? "lunch" : this.state.mealTime}?
+                Don't know what to make for{" "}
+                {!this.state.mealTime ? "lunch" : this.state.mealTime}?
               </span>
               <span>Whatever time of the day (or night) it is...</span>
               <span>We've got you covered.</span>
