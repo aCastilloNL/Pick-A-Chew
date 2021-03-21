@@ -38,7 +38,6 @@
     display: none !important;
   }
   .recipeStepsBox {
-    /* background-image: url("../images/scroll-main.png"); */
     background-color: antiquewhite;
     background-repeat: no-repeat;
     background-size: 110% 98%;
@@ -59,18 +58,6 @@
     padding-bottom: 1rem;
     padding-top: 15px;
   }
-  /* .scrollTop {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-  .scrollBottom {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-  } */
   .stepStyle {
     font-family: "Nerko One", cursive;
     font-size: 1.1rem;
@@ -218,7 +205,6 @@
     display: none !important;
   }
   .recipeStepsBox {
-    background-image: url("../images/scroll-main.png");
     background-repeat: no-repeat;
     background-size: 65% 100%;
     background-position: center;
