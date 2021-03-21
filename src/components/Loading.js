@@ -35,21 +35,6 @@ class Loading extends Component {
                 />
               </div>
             </div>
-
-            {/* Desktop version */}
-
-            {/* <div className="videoDesktop">
-                  <video autoPlay muted
-                    style={{
-                    position : "absolute",
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                    zIndex: "-1"
-                  }}>
-                    <source src={char} type='video/mp4' />
-                  </video>
-                </div> */}
           </>
         )
       );

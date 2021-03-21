@@ -4,8 +4,8 @@ import { stockDesktop } from "./stockIngredientsDesktop";
 import "./RecipeList.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import scrollTop from "../images/scroll-top.png";
-import scrollBottom from "../images/scroll-bottom.png";
+// import scrollTop from "../images/scroll-top.png";
+// import scrollBottom from "../images/scroll-bottom.png";
 
 class RecipeList extends Component {
   constructor(props) {
@@ -27,14 +27,14 @@ class RecipeList extends Component {
       .then((result) => {
         return result.json();
       })
-      .then((res) => {
-        let recipeInfo = res.length ? res[0].steps : [];
-        console.log(recipeInfo);
+      .then((result) => {
+        console.log('RecipeList.js, line31 result:', result)
+        let recipeInfo = result.length ? result[0].steps : [];
         let recipeIngredients = recipeInfo.map((item) => item.ingredients);
-        console.log(recipeIngredients);
         console.log(
           recipeIngredients.flat().map((ingredient) => ingredient.name)
         );
+        console.log('RecipeList.js, line37 result:', recipeInfo)
         this.setState({
           showRecipe: true,
           info: recipeInfo,
@@ -67,7 +67,7 @@ class RecipeList extends Component {
   componentDidMount() {
     let stock2 = stock.join();
     fetch(
-      `https://api.spoonacular.com/recipes/findByIngredients?apiKey=${process.env.REACT_APP_API_SPOONACULAR_KEY}&ingredients=${stock2}&number=2`
+      `https://api.spoonacular.com/recipes/findByIngredients?apiKey=${process.env.REACT_APP_API_SPOONACULAR_KEY}&ingredients=${stock2}&number=3`
     )
       .then((res) => res.json())
       .then((json) => {
@@ -78,7 +78,7 @@ class RecipeList extends Component {
       });
     let stock3 = stockDesktop.join(); /*desktop version*/
     fetch(
-      `https://api.spoonacular.com/recipes/findByIngredients?apiKey=${process.env.REACT_APP_API_SPOONACULAR_KEY}&ingredients=${stock3}&number=2`
+      `https://api.spoonacular.com/recipes/findByIngredients?apiKey=${process.env.REACT_APP_API_SPOONACULAR_KEY}&ingredients=${stock3}&number=1`
     )
       .then((res) => res.json())
       .then((json) => {
@@ -120,7 +120,7 @@ class RecipeList extends Component {
 
           {this.state.showRecipe && (
             <div className="recipeStepsBox">
-              <img className="scrollTop" src={scrollTop} alt="scroll" />
+              {/* <img className="scrollTop" src={scrollTop} alt="scroll" /> */}
               {this.state.showIngredients && (
                 <div className="ingredientsAmount">
                   <h3 className="steps">Ingredients</h3>
@@ -150,11 +150,9 @@ class RecipeList extends Component {
               <button className="recipeButton" onClick={this.closeRecipeBox}>
                 Back to Recipes
               </button>
-              <img className="scrollBottom" src={scrollBottom} alt="scroll" />
+              {/* <img className="scrollBottom" src={scrollBottom} alt="scroll" /> */}
             </div>
           )}
-
-          {console.log(this.state.info)}
         </div>
       );
     }

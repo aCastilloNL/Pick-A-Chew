@@ -9,7 +9,7 @@ import { fridgeDesktop } from "./fridgeDesktop";
 import { stock } from "./stockIngredients";
 import { stockDesktop } from "./stockIngredientsDesktop";
 import hoversound from "../audio/hovermecha.mp3";
-import clicksound from "../audio/clicksound.mp3";
+import clicksound from '../audio/clicksound.mp3'
 let magGlassTarget, i;
 
 const hover = new Audio(hoversound);
@@ -74,7 +74,7 @@ class IngredientsPage extends Component {
   };
   playClick = () => {
     click.play();
-  };
+  }
 
   // Desktop version below
   getAllIngredients2 = () => {

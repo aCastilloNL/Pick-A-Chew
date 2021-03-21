@@ -17,10 +17,126 @@ export let fridge = {
           value: "Beef",
           label: "Beef",
         },
+        // {
+        //   value: "Beef brisket",
+        //   label: "Beef brisket",
+        // },
+        // {
+        //   value: "Beef broth",
+        //   label: "Beef broth",
+        // },
+        // {
+        //   value: "Beef chuck roast",
+        //   label: "Beef chuck roast",
+        // },
+        // {
+        //   value: "Beef stock",
+        //   label: "Beef stock",
+        // },
+        // {
+        //   value: "Beef tenderloin",
+        //   label: "Beef tenderloin",
+        // },
+        // {
+        //   value: "Corned beef",
+        //   label: "Corned beef",
+        // },
+        // {
+        //   value: "Ground beef",
+        //   label: "Ground beef",
+        // },
+        // {
+        //   value: "Lean ground beef",
+        //   label: "Lean ground beef",
+        // },
+        // {
+        //   value: "Roast beef",
+        //   label: "Roast beef",
+        // },
         {
           value: "Chicken",
           label: "Chicken",
         },
+        // {
+        //   value: "Chicken base",
+        //   label: "Chicken base",
+        // },
+        // {
+        //   value: "Chicken bouillon",
+        //   label: "Chicken bouillon",
+        // },
+        // {
+        //   value: "Chicken bouillon granules",
+        //   label: "Chicken bouillon granules",
+        // },
+        // {
+        //   value: "Chicken breasts",
+        //   label: "Chicken breasts",
+        // },
+        // {
+        //   value: "Chicken broth",
+        //   label: "Chicken broth",
+        // },
+        // {
+        //   value: "Chicken drumsticks",
+        //   label: "Chicken drumsticks",
+        // },
+        // {
+        //   value: "Chicken legs",
+        //   label: "Chicken legs",
+        // },
+        // {
+        //   value: "Chicken pieces",
+        //   label: "Chicken pieces",
+        // },
+        // {
+        //   value: "Chicken wings",
+        //   label: "Chicken wings",
+        // },
+        // {
+        //   value: "Chicken sausage",
+        //   label: "Chicken sausage",
+        // },
+        // {
+        //   value: "Chicken stock",
+        //   label: "Chicken stock",
+        // },
+        // {
+        //   value: "Chicken tenders",
+        //   label: "Chicken tenders",
+        // },
+        // {
+        //   value: "Chicken thighs",
+        //   label: "Chicken wings",
+        // },
+        // {
+        //   value: "Chicken wings",
+        //   label: "Chicken wings",
+        // },
+        // {
+        //   value: "Ground chicken",
+        //   label: "Ground chicken",
+        // },
+        // {
+        //   value: "Roasted chicken",
+        //   label: "Roasted chicken",
+        // },
+        // {
+        //   value: "Rotisserie chicken",
+        //   label: "Rotisserie chicken",
+        // },
+        // {
+        //   value: "Shredded chicken",
+        //   label: "Shredded chicken",
+        // },
+        // {
+        //   value: "Whole chicken",
+        //   label: "Whole chicken",
+        // },
+        // {
+        //   value: "Boneless chicken",
+        //   label: "Boneless chicken",
+        // },
         {
           value: "Lamb",
           label: "Lamb",
