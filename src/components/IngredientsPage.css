@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@media only screen and (max-width: 768px) and (min-width: 280px) {
+  .ingredients {
+    border-top: 1px solid transparent;
+    background: url("../images/ingredientsBg.jpg") no-repeat fixed;
+    background-size: 100% 100%;
+    min-height: 100vh;
+  }
+  .pikachu-ingredients {
+    width: 30%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.708);
+    border-radius: 100%;
+    border: solid black;
+  }
+  .ingredients-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2%;
+    margin-bottom: 20px;
+  }
+  .bubble-ingredients {
+    width: 65%;
+    background: rgba(255, 255, 255, 0.708);
+    background-image: url("../images/pokebubblebox.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .bubbleTextIngredients {
+    width: 65%;
+    font-family: "Press Start 2P", cursive;
+    font-size: 90%;
+    padding-left: 7%;
+    padding-top: 3%;
+  }
+  .ingredients-image {
+    width: 30%;
+    background-color: beige;
+    border-radius: 100%;
+    border: solid black;
+    align-self: center;
+    margin-bottom: 15px;
+  }
+  .ingredients-section {
+    display: flex;
+    flex-direction: column;
+    border-width: 50%;
+  }
+  figcaption {
+    text-align: center;
+  }
+  .categoryCss {
+    font-family: "Press Start 2P", cursive;
+    text-align: center;
+  }
+  .searchBar {
+    width: 80%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 2px 1px;
+    padding-left: 22px;
+    margin-bottom: 50px;
+  }
+  .ingredientsBtn {
+    font-family: "Press Start 2P", Roboto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 80%;
+    height: 50px;
+    align-self: center;
+    font-family: "Press Start 2P", cursive;
+    font-size: 15px;
+    background-color: rgba(248, 248, 200, 0.797);
+    border-radius: 30px;
+  }
+  .ingrdntsBtnSpan {
+    background-color: rgba(248, 248, 200, 0);
+    width: 99.9%;
+    height: 45px;
+    font-family: "Press Start 2P", Roboto;
+    font-size: 15px;
+  }
+  .basic-multi-select {
+    /*react select properties*/
+    width: 95%;
+    align-self: flex-end;
+    font-family: "Nerko One", cursive;
+    font-size: 20px;
+  }
+  .select__control {
+    /* react select properties*/
+    border-radius: 20px !important;
+    border: solid black !important;
+    margin-bottom: 30px !important;
+  }
+  .select__control--menu-is-open {
+    border-radius: 20px !important;
+    border: solid black !important;
+  }
+  .select__multi-value {
+    border-radius: 20px !important;
+  }
+}
+@media only screen and (max-width: 342px) {
+  .bubbleTextIngredients {
+    width: 150px;
+    padding-top: 2%;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .ingredients-desktop {
+    display: none;
+  }
+  .bubbleTextDesktop {
+    display: none;
+  }
+  /*Desktop version starts here*/
+}
+@media only screen and (min-width: 769px) and (max-width: 1920px) {
+  @font-face {
+    font-family: "hashedbrowns";
+    src: url("../fonts/HashedBrowns-WyJgn.ttf");
+  }
+  .ingredients-header {
+    display: none;
+  }
+  .ingredients-section {
+    display: none;
+  }
+  .ingredientsBtn {
+    display: none;
+  }
+  .ingrdntsBtnSpan {
+    display: none;
+  }
+  .ingredients-desktop {
+    background: white url("../images/ingredientsDesk.jpg") no-repeat fixed;
+    background-size: 100% 100%;
+    height: 100vh;
+  }
+  .desktopWrapper {
+    background: rgba(255, 255, 255, 0.7);
+    height: 100%;
+  }
+  .IngrdntsPgTitleDesktop {
+    color: rgb(250, 250, 113);
+    font-family: hashedBrowns;
+    -webkit-text-stroke: 1.5px rgb(255, 45, 45);
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 5rem;
+  }
+  .desktopSearchbar {
+    width: 50%;
+    margin-left: 25%;
+    font-family: "Roboto";
+    font-size: 15px;
+    color: #000000;
+    margin-top: 15px;
+  }
+  .desktopSearchbar:hover {
+    box-shadow: 0 0 15px #ffe659;
+    border-radius: 30px;
+  }
+  .select__control {
+    /* react select properties*/
+    border-radius: 30px !important;
+    border: 2px solid black !important;
+    /* margin-bottom: 30px !important; */
+  }
+  .select__control:hover {
+      cursor: pointer;
+  }
+  .select__multi-value {
+    /* react select properties*/
+    border-radius: 20px !important;
+  }
+  .deskIngredientsBtn {
+    font-family: "Roboto";
+    width: 25%;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    font-size: 16px;
+    letter-spacing: 1.7px;
+    font-weight: 500;
+    height: 35px;
+    margin-bottom: 3%;
+    border-radius: 30px;
+    border: 2px solid black;
+    background: transparent;
+  }
+  .deskIngredientsBtn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 15px #ffe659;
+    border: 2px solid #ffff32;
+    color: rgb(252, 252, 125);
+    background: rgba(60, 60, 60, 0.194);
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+  .bubbleTextDesktop {
+    width: 45%;
+    position: absolute;
+    left: 27%;
+    font-family: "roboto";
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+}
