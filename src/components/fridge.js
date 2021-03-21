@@ -1,5 +1,5 @@
 import meat from "../images/meatIcon.png";
-import fish from "../images/fish-icon2.png";
+import fish from "../images/fishIcon.png";
 import vege from "../images/vegetablesIcon.png";
 import fruit from "../images/fruitsIcon.png";
 import dairy from "../images/dairyIcon.png";
