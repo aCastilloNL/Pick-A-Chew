@@ -4,8 +4,6 @@ import { stockDesktop } from "./stockIngredientsDesktop";
 import "./RecipeList.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-// import scrollTop from "../images/scroll-top.png";
-// import scrollBottom from "../images/scroll-bottom.png";
 
 class RecipeList extends Component {
   constructor(props) {
@@ -14,46 +12,32 @@ class RecipeList extends Component {
       items: {},
       isLoaded: false,
       showRecipe: false,
-      info: [],
+      showIngredients: false,
+      steps: [],
       ingre: [],
     };
   }
 
   displayRecipeBox = (id) => {
-    console.log("this is the", id);
     fetch(
-      `https://api.spoonacular.com/recipes/${id}/analyzedInstructions?apiKey=${process.env.REACT_APP_API_SPOONACULAR_KEY}`
+      `https://api.spoonacular.com/recipes/${id}/information?apiKey=${process.env.REACT_APP_API_SPOONACULAR_KEY}`
     )
       .then((result) => {
         return result.json();
       })
-      .then((result) => {
-        console.log('RecipeList.js, line31 result:', result)
-        let recipeInfo = result.length ? result[0].steps : [];
-        let recipeIngredients = recipeInfo.map((item) => item.ingredients);
-        console.log(
-          recipeIngredients.flat().map((ingredient) => ingredient.name)
-        );
-        console.log('RecipeList.js, line37 result:', recipeInfo)
+      .then((data) => {
+        // let recipeInfo = data.length ? data[0].steps : [];
+        let recipeIngredients = data.extendedIngredients.map((number) => {
+          return number.original;
+        });
+        let recipeSteps = data.analyzedInstructions.map((choice) => {
+          return choice.steps.map((currEl) => currEl.step);
+        });
         this.setState({
           showRecipe: true,
-          info: recipeInfo,
-        });
-      });
-  };
-
-  displayRecipeBox2 = (id) => {
-    fetch(
-      `https://api.spoonacular.com/recipes/${id}/information?apiKey=${process.env.REACT_APP_API_SPOONACULAR_KEY}`
-    )
-      .then((result2) => {
-        return result2.json();
-      })
-      .then((jason2) => {
-        let listIngredients = jason2.extendedIngredients;
-        this.setState({
+          steps: recipeSteps,
           showIngredients: true,
-          ingre: listIngredients,
+          ingre: recipeIngredients,
         });
       });
   };
@@ -104,14 +88,9 @@ class RecipeList extends Component {
                 <p className="legend">
                   <button
                     className="ingredientsButton"
-                    onClick={() => this.displayRecipeBox2(item.id)}
+                    onClick={() => this.displayRecipeBox(item.id)}
                   >
-                    <span
-                      className="span1"
-                      onClick={() => this.displayRecipeBox(item.id)}
-                    >
-                      {item.title}
-                    </span>
+                    {item.title}
                   </button>
                 </p>
               </div>
@@ -120,14 +99,13 @@ class RecipeList extends Component {
 
           {this.state.showRecipe && (
             <div className="recipeStepsBox">
-              {/* <img className="scrollTop" src={scrollTop} alt="scroll" /> */}
               {this.state.showIngredients && (
                 <div className="ingredientsAmount">
                   <h3 className="steps">Ingredients</h3>
-                  {this.state.ingre.map((indexer2) => (
+                  {this.state.ingre.map((ingredient, index) => (
                     <div className="ingredStepsList">
                       <ul>
-                        <li>{indexer2.original}</li>
+                        <li>{ingredient}</li>
                       </ul>
                     </div>
                   ))}
@@ -135,11 +113,11 @@ class RecipeList extends Component {
               )}
 
               <h3 className="steps">Step-by-Step Instructions</h3>
-              {this.state.info.length ? (
-                this.state.info.map((indexer) => (
+              {this.state.steps.length ? (
+                this.state.steps[0].map((currElement, index) => (
                   <div>
-                    <h3 className="stepInstruction"> Step {indexer.number} </h3>
-                    <p className="stepStyle">{indexer.step}</p>
+                    <h3 className="stepInstruction"> Step {index} </h3>
+                    <p className="stepStyle">{currElement}</p>
                   </div>
                 ))
               ) : (
@@ -150,7 +128,6 @@ class RecipeList extends Component {
               <button className="recipeButton" onClick={this.closeRecipeBox}>
                 Back to Recipes
               </button>
-              {/* <img className="scrollBottom" src={scrollBottom} alt="scroll" /> */}
             </div>
           )}
         </div>
