@@ -86,10 +86,20 @@ class RecipeList extends Component {
           <p className="resultTitleDesktop">Recipes</p>
           <h3 style={{ width: '100%', background: 'white'}}>Your choices:</h3>
           <p style={{ width: '100%', background: 'white'}}>{stock.toString().replace(/,/g, ", ")}</p> 
-          <Carousel>
+          <Carousel showThumbs={false}>
             {items.map((item) => (
               <div className="recipeContainer" data-id={item.id}>
+              <>
                 <img src={item.image} className="recipeImg" alt="images" />
+                {/* <p className="legend">
+                  <button
+                    className="ingredientsButton"
+                    onClick={() => this.displayRecipeBox(item.id)}
+                  >
+                    {item.title}
+                  </button>
+                </p> */}
+                </>
                 <p className="legend">
                   <button
                     className="ingredientsButton"
