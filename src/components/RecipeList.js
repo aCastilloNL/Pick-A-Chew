@@ -49,13 +49,15 @@ class RecipeList extends Component {
   };
 
   componentDidMount() {
+    console.log('stock1 before let stock2:', stock)
     let stock2 = stock.join();
-    console.log(stock2)
     fetch(
       `https://api.spoonacular.com/recipes/findByIngredients?apiKey=${process.env.REACT_APP_API_SPOONACULAR_KEY}&ingredients=${stock2}&number=3`
     )
       .then((res) => res.json())
       .then((json) => {
+        console.log('Stock1 in .then:', stock)
+        console.log('Stock2 in .then:', stock2)
         this.setState({
           isLoaded: true,
           items: json,
@@ -82,6 +84,8 @@ class RecipeList extends Component {
       return (
         <div className="recipeListContainer">
           <p className="resultTitleDesktop">Recipes</p>
+          <h3 style={{ width: '100%', background: 'white'}}>Your choices:</h3>
+          <p style={{ width: '100%', background: 'white'}}>{stock.toString().replace(/,/g, ", ")}</p> 
           <Carousel>
             {items.map((item) => (
               <div className="recipeContainer" data-id={item.id}>

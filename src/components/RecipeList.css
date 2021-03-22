@@ -110,10 +110,10 @@
     text-decoration: underline;
     font-style: oblique;
   }
-  .span1 {
+  /* .span1 {
     font-family: "Nerko One", cursive;
     font-size: 15px;
-  }
+  } */
   .resultTitleDesktop {
     display: none;
   }
