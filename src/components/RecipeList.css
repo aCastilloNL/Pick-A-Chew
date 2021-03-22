@@ -79,19 +79,15 @@
     color: black;
   }
   .ingredientsAmount ul {
-    /* margin-top: 0;
-    margin-bottom: 0; */
+    margin: 0;
     padding-left: 0;
     text-align: left;
     list-style-type: none;
   }
   .ingredientsAmount ul li {
     margin: 0.5rem .3rem;
-    /* padding-bottom: 0; */
     text-align: left;
-    /* margin-top: 18px; */
    list-style: none;
-    /*margin-bottom: 10px; */
   }
   .ingredStepsList {
     margin-bottom: 0;
@@ -182,20 +178,6 @@
     background-color: beige;
     font-size: 17px;
   }
-  /* .scrollTop {
-    width: 65%;
-    position: fixed;
-    top: 0;
-    left: 17.5%;
-    z-index: 1;
-  }
-  .scrollBottom {
-    width: 65%;
-    position: fixed;
-    bottom: 0;
-    left: 17.5%;
-    z-index: 1;
-  } */
   .steps {
     margin-top: 0;
     color: black;

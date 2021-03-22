@@ -30,7 +30,7 @@ class HomePage extends Component {
       this.setState({
         mealTime: this.mealTimeGenerator(),
       });
-    }, 3000);
+    }, 2000);
   }
 
   componentWillUnmount() {

@@ -50,6 +50,7 @@ class RecipeList extends Component {
 
   componentDidMount() {
     let stock2 = stock.join();
+    console.log(stock2)
     fetch(
       `https://api.spoonacular.com/recipes/findByIngredients?apiKey=${process.env.REACT_APP_API_SPOONACULAR_KEY}&ingredients=${stock2}&number=3`
     )
@@ -76,7 +77,7 @@ class RecipeList extends Component {
   render() {
     let { isLoaded, items } = this.state;
     if (!isLoaded) {
-      return <div>Almost there...</div>;
+      return <div>Organizing Recipes...</div>;
     } else {
       return (
         <div className="recipeListContainer">
@@ -122,7 +123,7 @@ class RecipeList extends Component {
                 ))
               ) : (
                 <div>
-                  <h2>Sorry, recipe not available.</h2>
+                  <h2>Sorry, this recipe is not available.</h2>
                 </div>
               )}
               <button className="recipeButton" onClick={this.closeRecipeBox}>
