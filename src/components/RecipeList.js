@@ -31,7 +31,7 @@ class RecipeList extends Component {
           return number.original;
         });
         let recipeSteps = data.analyzedInstructions.map((choice) => {
-          return choice.steps.map((currEl) => currEl.step);
+          return choice.steps.map((currEl) => currEl);
         });
         this.setState({
           showRecipe: true,
@@ -102,7 +102,7 @@ class RecipeList extends Component {
               {this.state.showIngredients && (
                 <div className="ingredientsAmount">
                   <h3 className="steps">Ingredients</h3>
-                  {this.state.ingre.map((ingredient, index) => (
+                  {this.state.ingre.map((ingredient) => (
                     <div className="ingredStepsList">
                       <ul>
                         <li>{ingredient}</li>
@@ -114,10 +114,10 @@ class RecipeList extends Component {
 
               <h3 className="steps">Step-by-Step Instructions</h3>
               {this.state.steps.length ? (
-                this.state.steps[0].map((currElement, index) => (
+                this.state.steps[0].map((currElement) => (
                   <div>
-                    <h3 className="stepInstruction"> Step {index} </h3>
-                    <p className="stepStyle">{currElement}</p>
+                    <h3 className="stepInstruction"> Step {currElement.number} </h3>
+                    <p className="stepStyle">{currElement.step}</p>
                   </div>
                 ))
               ) : (

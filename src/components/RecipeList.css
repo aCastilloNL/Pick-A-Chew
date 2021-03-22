@@ -79,20 +79,24 @@
     color: black;
   }
   .ingredientsAmount ul {
-    margin-top: 0;
-    margin-bottom: 0;
+    /* margin-top: 0;
+    margin-bottom: 0; */
     padding-left: 0;
+    text-align: left;
+    list-style-type: none;
   }
   .ingredientsAmount ul li {
-    margin: 0;
-    padding-bottom: 0;
-    margin-top: 18px;
-    list-style-type: none;
-    margin-bottom: 10px;
+    margin: 0.5rem .3rem;
+    /* padding-bottom: 0; */
+    text-align: left;
+    /* margin-top: 18px; */
+   list-style: none;
+    /*margin-bottom: 10px; */
   }
   .ingredStepsList {
     margin-bottom: 0;
     padding-top: 0;
+    list-style-type: none;
   }
   .ingredientsButton {
     border: none;
@@ -178,7 +182,7 @@
     background-color: beige;
     font-size: 17px;
   }
-  .scrollTop {
+  /* .scrollTop {
     width: 65%;
     position: fixed;
     top: 0;
@@ -191,9 +195,9 @@
     bottom: 0;
     left: 17.5%;
     z-index: 1;
-  }
+  } */
   .steps {
-    margin-top: 5%;
+    margin-top: 0;
     color: black;
     text-decoration: underline;
     font-style: oblique;
@@ -205,21 +209,24 @@
     display: none !important;
   }
   .recipeStepsBox {
+    background-color: rgba(250, 235, 215, 0.947);
     background-repeat: no-repeat;
-    background-size: 65% 100%;
+    /* background-size: 65% 75%; */
     background-position: center;
     border-radius: 20px;
     position: absolute;
     z-index: 1;
-    top: 2%;
-    width: 99%;
-    height: 82%;
+    top: 10%;
+    left: 13%;
+    right: 10%;
+    width: 75%;
+    height: 75%;
     text-align: center;
     overflow-x: auto;
     font-family: "Nerko One", cursive;
     font-size: 1.1rem;
     padding-bottom: 1rem;
-    padding-top: 15px;
+    padding-top: 1rem;
   }
   .ingredientsAmount ul li {
     list-style-type: none;
