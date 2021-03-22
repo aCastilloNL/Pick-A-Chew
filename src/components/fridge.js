@@ -362,7 +362,7 @@ export let fridge = {
       ],
     },
     {
-      category: "Herbs & Spices",
+      category: "Herbs",
       image: herb,
       ingredients: [
         {

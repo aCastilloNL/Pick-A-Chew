@@ -176,6 +176,7 @@
     border: none;
     width: 80%;
     background-color: beige;
+    font-family: cursive;
     font-size: 17px;
   }
   .steps {
@@ -227,8 +228,8 @@
     height: 2.5em;
     border-radius: 30px;
     font-size: 1.1rem;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     margin-bottom: 3%;
   }
   .span1 {

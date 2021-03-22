@@ -156,7 +156,7 @@ class IngredientsPage extends Component {
                   onMouseLeave={this.stopHover}
                   onClick={this.props.toLoading}
                 >
-                  <span className="cheat2" onClick={this.getAllIngredients2}>
+                  <span onClick={this.getAllIngredients2}>
                     Recipes
                   </span>
                 </button>
