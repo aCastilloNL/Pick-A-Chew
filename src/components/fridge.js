@@ -10,7 +10,7 @@ import sauce from "../images/sauceIcons.png";
 export let fridge = {
   list: [
     {
-      category: "Meats",
+      category: "Meat",
       image: meat,
       ingredients: [
         {
