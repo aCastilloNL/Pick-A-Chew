@@ -100,16 +100,18 @@ class IngredientsPage extends Component {
             </div>
           </div>
           <section className="ingredients-section">
-            {fridge.list.map((fridgeChoice) => (
+            {fridge.list.map((fridgeChoice, index) => (
               <>
-                <p className="categoryCss">{fridgeChoice.category}</p>
+                <p className="categoryCss" key={`${index}-catName`}>{fridgeChoice.category}</p>
                 <img
                   className="ingredients-image"
+                  key={`${index}-catImg`}
                   src={fridgeChoice.image}
                   alt={fridgeChoice.category}
                 />
                 <div className="basic-multi-select">
                   <SearchBar
+                    key={`${index}-ingred`}
                     list={fridgeChoice.ingredients}
                     handleIngredientsChange={this.handleIngredientsChange}
                     category={fridgeChoice.category}
@@ -121,9 +123,9 @@ class IngredientsPage extends Component {
           {/* Desktop version starts here */}
           <section className="ingredients-desktop">
             <div className="desktopWrapper">
-              {fridgeDesktop.list.map((fridgeChoice2) => (
+              {fridgeDesktop.list.map((fridgeChoice2, index) => (
                 <>
-                  <p className="IngrdntsPgTitleDesktop">
+                  <p className="IngrdntsPgTitleDesktop" key={`${index}-catNameDsk`}>
                     {fridgeChoice2.category}
                   </p>
                   <div
@@ -134,6 +136,7 @@ class IngredientsPage extends Component {
                   >
                     <SearchBar
                       list={fridgeChoice2.ingredients}
+                      key={`${index}-ingredDsk`}
                       handleIngredientsChange={this.handleIngredientsChange}
                       category={fridgeChoice2.category}
                     />

@@ -3,18 +3,22 @@
     display: none !important;
   }
   .legend {
-    font-family: "Nerko One", cursive;
+    font-family: cursive;
     color: black !important;
     margin-bottom: 0;
-    background-color: beige !important;
+    background-color: rgb(255, 255, 255) !important;
     border: 1px solid black;
   }
   .recipeContainer {
     background-color: rgba(255, 255, 255, 0);
-    padding-bottom: 3rem;
+    padding-bottom: 3.3rem;
   }
   .carousel .slide {
     background-color: rgba(255, 255, 255, 0) !important;
+  }
+  .carousel .slide img {
+    border-top: 3px solid white !important;
+    border-bottom: 3px solid white !important;
   }
   /* .carousel .carousel-status {
     display: none !important;
@@ -24,12 +28,15 @@
     padding: 0% !important;
     bottom: 7% !important;
   }
-  .carousel.carousel-slider {
-    border-top: 3px solid whitesmoke;
-    border-bottom: 3px solid whitesmoke;
-    /* width: 100% !important;
-    margin-top: 60px !important; */
+  .carousel .control-dots {
+    margin: 0 !important;
   }
+  /* .carousel.carousel-slider {
+    border-top: 3px solid whitesmoke;
+    border-bottom: 3px solid whitesmoke; 
+     width: 100% !important;
+    margin-top: 60px !important;
+  } */
   /* .carousel-root {
     padding-left: 0;
     padding-right: 0;
@@ -102,7 +109,7 @@
   .ingredientsButton {
     border: none;
     width: 80%;
-    background-color: beige;
+    background-color: rgb(255, 255, 255);
     font-size: 17px;
   }
 
@@ -127,10 +134,10 @@
   .span1 {
     font-size: 11px !important;
   }
-  .carousel .control-dots .dot {
+  /* .carousel .control-dots .dot {
     width: 4px !important;
     height: 4px !important;
-  }
+  } */
 }
 
 /* desktop version starts here */

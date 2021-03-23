@@ -1,6 +1,7 @@
 @media only screen and (max-width: 768px) and (min-width: 280px) {
   .results {
-    background-image: url("../images/grilledGoods.jpg");
+    /* background-image: url("../images/grilledGoods.jpg"); */
+    background-color: white;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     min-height: 100vh;
