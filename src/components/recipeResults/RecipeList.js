@@ -79,8 +79,8 @@ class RecipeList extends Component {
         <div className="recipeListContainer">
           <p className="resultTitleDesktop">Recipes</p>
           <h3 style={{ width: '100%', background: 'white', margin: '0'}}>Your choices:</h3>
-          <p id="yourChoices" style={{ width: '100%', background: 'white'}}>{stock.toString().replace(/,/g, ", ")}</p> 
-          <p id="yourChoicesDesk" style={{ width: '100%', background: 'white'}}>{stockDesk.toString().replace(/,/g, ", ")}</p>
+          <p style={{ width: '100%', background: 'white'}}>{stock.toString().replace(/,/g, ", ")}</p> 
+          <p style={{ width: '100%', background: 'white'}}>{stockDesk.toString().replace(/,/g, ", ")}</p>
           <Carousel showThumbs={false}>
             {items.map((item) => (
               <div className="recipeContainer" data-id={item.id}>
@@ -124,7 +124,7 @@ class RecipeList extends Component {
                 ))
               ) : (
                 <div>
-                  <h2>Sorry, this recipe is not available.</h2>
+                  <h2>We're sorry, this recipe is not available at the moment...</h2>
                 </div>
               )}
               <button className="recipeButton" onClick={this.closeRecipeBox}>

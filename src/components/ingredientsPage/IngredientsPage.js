@@ -7,7 +7,7 @@ import SearchBar from "./SearchBar";
 import { kitchen, kitchenDesk } from "./kitchen";
 import { stock, stockDesk } from "../stockIngredients";
 import hoversound from "../../audio/hovermecha.mp3";
-import clicksound from '../../audio/clicksound.mp3'
+import clicksound from "../../audio/clicksound.mp3";
 let magGlassTarget, i;
 
 const hover = new Audio(hoversound);
@@ -25,7 +25,6 @@ class IngredientsPage extends Component {
     ingredientsHerbs: [],
     ingredientsSauces: [],
     finalIngredients: [],
-    finalIngreDesk: [],
   };
   searchBarGlass = () => {
     magGlassTarget = document.querySelectorAll(".select__dropdown-indicator");
@@ -41,23 +40,20 @@ class IngredientsPage extends Component {
     this.searchBarGlass();
   }
   handleIngredientsChange = (option, category) => {
-    console.log('option line44:', option)
     let optionToString = option
       ? option.map((ingredientsOption) => ingredientsOption.value)
       : [];
-      console.log('optionToString line48:', optionToString)
     this.setState({
       ["ingredients" + category]: optionToString,
     });
   };
 
   handleDeskIngreChange = (option) => {
-    console.log('option line55:', option)
-    let deskOption = option ? option.map((ingredientOption) => ingredientOption.value)
+    let deskOption = option
+      ? option.map((ingredientOption) => ingredientOption.value)
       : [];
-      console.log('deskOption line58:', deskOption)
-      stockDesk.push(deskOption)
-  }
+    stockDesk.push(deskOption);
+  };
 
   getAllIngredients = () => {
     let allIngredients = [
@@ -70,10 +66,8 @@ class IngredientsPage extends Component {
       ...this.state.ingredientsHerbs,
       ...this.state.ingredientsSauces,
     ];
-    console.log(allIngredients)
     this.setState({
       finalIngredients: stock.push(allIngredients),
-      // finalIngreDesk: stockDesk.push(allIngredients),
     });
   };
   playHover = () => {
@@ -84,7 +78,7 @@ class IngredientsPage extends Component {
   };
   playClick = () => {
     click.play();
-  }
+  };
 
   render() {
     return (
@@ -125,34 +119,31 @@ class IngredientsPage extends Component {
           {/* Desktop version starts here */}
           <section className="ingredients-desktop">
             <div className="desktopWrapper">
-                <>
-                  <p className="IngrdntsPgTitleDesktop">
-                    Ingredients
-                  </p>
-                  <div
-                    className="desktopSearchbar"
-                    onMouseEnter={this.playHover}
-                    onMouseLeave={this.stopHover}
-                    onClick={this.playClick}
-                  >
-                    {kitchenDesk.list.map((selection) => (
+              <>
+                <p className="IngrdntsPgTitleDesktop">Ingredients</p>
+                <div
+                  className="desktopSearchbar"
+                  onMouseEnter={this.playHover}
+                  onMouseLeave={this.stopHover}
+                  onClick={this.playClick}
+                >
+                  {kitchenDesk.list.map((selection) => (
                     <SearchBar
                       list={selection.ingredients}
                       handleIngredientsChange={this.handleDeskIngreChange}
-                      // category={selection.category.map((categ) => console.log(categ))}
                     />
-                    ))}
-                  </div>
-                  <div className="bubbleTextDesktop">
-                    <PokeBubbleTextDesktop
-                      stopCounter={145}
-                      textData={[
-                        "Which foods are in your kitchen?",
-                        "Search all the ingredients above and click on the button below.",
-                      ]}
-                    />
-                  </div>
-                </>
+                  ))}
+                </div>
+                <div className="bubbleTextDesktop">
+                  <PokeBubbleTextDesktop
+                    stopCounter={145}
+                    textData={[
+                      "Which foods are in your kitchen?",
+                      "Search all the ingredients above and click on the button below.",
+                    ]}
+                  />
+                </div>
+              </>
               <div className="container-homeDesktop">
                 <button
                   className="deskIngredientsBtn"
@@ -161,8 +152,8 @@ class IngredientsPage extends Component {
                   onClick={this.props.toLoading}
                 >
                   <span
-                  className="deskIngrdntsBtnSpan" 
-                  onClick={this.getAllIngredients}
+                    className="deskIngrdntsBtnSpan"
+                    onClick={this.getAllIngredients}
                   >
                     Recipes
                   </span>
