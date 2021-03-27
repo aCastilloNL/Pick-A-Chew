@@ -41,13 +41,24 @@ class IngredientsPage extends Component {
     this.searchBarGlass();
   }
   handleIngredientsChange = (option, category) => {
+    console.log('option line44:', option)
     let optionToString = option
       ? option.map((ingredientsOption) => ingredientsOption.value)
       : [];
+      console.log('optionToString line48:', optionToString)
     this.setState({
       ["ingredients" + category]: optionToString,
     });
   };
+
+  handleDeskIngreChange = (option) => {
+    console.log('option line55:', option)
+    let deskOption = option ? option.map((ingredientOption) => ingredientOption.value)
+      : [];
+      console.log('deskOption line58:', deskOption)
+      stockDesk.push(deskOption)
+  }
+
   getAllIngredients = () => {
     let allIngredients = [
       ...this.state.ingredientsMeat,
@@ -62,7 +73,7 @@ class IngredientsPage extends Component {
     console.log(allIngredients)
     this.setState({
       finalIngredients: stock.push(allIngredients),
-      finalIngreDesk: stockDesk.push(allIngredients),
+      // finalIngreDesk: stockDesk.push(allIngredients),
     });
   };
   playHover = () => {
@@ -127,8 +138,8 @@ class IngredientsPage extends Component {
                     {kitchenDesk.list.map((selection) => (
                     <SearchBar
                       list={selection.ingredients}
-                      handleIngredientsChange={this.handleIngredientsChange}
-                      category={selection.category}
+                      handleIngredientsChange={this.handleDeskIngreChange}
+                      // category={selection.category.map((categ) => console.log(categ))}
                     />
                     ))}
                   </div>
