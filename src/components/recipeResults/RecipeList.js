@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { stock } from "./stockIngredients";
-import { stockDesktop } from "./stockIngredientsDesktop";
+import { stock, stockDesk } from "../stockIngredients";
 import "./RecipeList.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -49,23 +48,9 @@ class RecipeList extends Component {
   };
 
   componentDidMount() {
-    console.log('stock1 before let stock2:', stock)
-    let stock2 = stock.join();
+    let stockCompressed = stock.join();
     fetch(
-      `https://api.spoonacular.com/recipes/findByIngredients?apiKey=${process.env.REACT_APP_API_SPOONACULAR_KEY}&ingredients=${stock2}&number=3`
-    )
-      .then((res) => res.json())
-      .then((json) => {
-        console.log('Stock1 in .then:', stock)
-        console.log('Stock2 in .then:', stock2)
-        this.setState({
-          isLoaded: true,
-          items: json,
-        });
-      });
-    let stock3 = stockDesktop.join(); /*desktop version*/
-    fetch(
-      `https://api.spoonacular.com/recipes/findByIngredients?apiKey=${process.env.REACT_APP_API_SPOONACULAR_KEY}&ingredients=${stock3}&number=1`
+      `https://api.spoonacular.com/recipes/findByIngredients?apiKey=${process.env.REACT_APP_API_SPOONACULAR_KEY}&ingredients=${stockCompressed}&number=3`
     )
       .then((res) => res.json())
       .then((json) => {
@@ -74,6 +59,15 @@ class RecipeList extends Component {
           items: json,
         });
       });
+      let stockCompressedesk= stockDesk.join()
+    fetch(`https://api.spoonacular.com/recipes/findByIngredients?apiKey=${process.env.REACT_APP_API_SPOONACULAR_KEY}&ingredients=${stockCompressedesk}&number=2`)
+       .then(res => res.json())
+      .then(json => {
+         this.setState({
+          isLoaded: true,
+          items: json
+        })
+      })
   }
 
   render() {

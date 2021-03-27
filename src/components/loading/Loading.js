@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Result from "./RecipeResults";
-import PokeBubbleText from "./PokeBubbleTextIngredients";
+import Result from "../recipeResults/RecipeResults";
+import PokeBubbleText from "../PokeBubbleTextIngredients";
 import "./Loading.css";
 
 class Loading extends Component {

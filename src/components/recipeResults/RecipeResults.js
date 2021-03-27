@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./RecipeResults.css";
 import RecipeList from "./RecipeList";
-import PokeBubbleText from "./PokeBubbleTextIngredients";
-import chefPi from "../images/chefpi.png";
+import PokeBubbleText from "../PokeBubbleTextIngredients";
+import chefPi from "../../images/chefpi.png";
 
 class Result extends Component {
   render() {

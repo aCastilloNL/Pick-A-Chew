@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./HomePage.css";
-import PokeBubbleText from "./PokebubbleTextHome";
-import pikachuHome from "../images/pikachuHome.gif";
-import pikaChef from "../images/chefpi.png";
-import hoversound from "../audio/hovermecha.mp3";
+import PokeBubbleText from "../PokebubbleTextHome";
+import pikachuHome from "../../images/pikachuHome.gif";
+import pikaChef from "../../images/chefpi.png";
+import hoversound from "../../audio/hovermecha.mp3";
 
 const hover = new Audio(hoversound);
 let counter = 0;

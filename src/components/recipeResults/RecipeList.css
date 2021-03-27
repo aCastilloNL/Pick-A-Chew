@@ -145,7 +145,7 @@
 @media only screen and (min-width: 769px) and (max-width: 1920px) {
   @font-face {
     font-family: "hashedbrowns";
-    src: url("../fonts/HashedBrowns-WyJgn.ttf");
+    src: url("../../fonts/HashedBrowns-WyJgn.ttf");
   }
   .resultTitleDesktop {
     margin-top: 0;
@@ -167,12 +167,12 @@
     margin-top: 3 !important;
     border-radius: 20px;
   }
-  .carousel .carousel-status {
+  /* .carousel .carousel-status {
     display: none !important;
-  }
-  .thumbs-wrapper {
+  } */
+  /* .thumbs-wrapper {
     display: none;
-  }
+  } */
   .legend {
     font-family: "Nerko One", cursive;
     color: black !important;
@@ -197,12 +197,12 @@
     text-decoration: underline;
     font-style: oblique;
   }
-  .carousel .control-next.control-arrow:before {
+  /* .carousel .control-next.control-arrow:before {
     display: none !important;
   }
   .carousel .control-prev.control-arrow:before {
     display: none !important;
-  }
+  } */
   .recipeStepsBox {
     background-color: rgba(250, 235, 215, 0.947);
     background-repeat: no-repeat;

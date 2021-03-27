@@ -2,7 +2,7 @@
   .loading {
     background-color: #6666CC;
     /* border-top: 1px solid black; */
-    background-image: url("../images/loadingPika.gif");
+    background-image: url("../../images/loadingPika.gif");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

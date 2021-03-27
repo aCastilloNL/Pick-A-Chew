@@ -1,15 +1,13 @@
 import React, { Component } from "react";
-import PokeBubbleText from "./PokeBubbleTextIngredients";
-import PokeBubbleTextDesktop from "./PokeBubbleDesktop";
+import PokeBubbleText from "../PokeBubbleTextIngredients";
+import PokeBubbleTextDesktop from "../PokeBubbleDesktop";
 import "./IngredientsPage.css";
-import chefPi from "../images/chefpi.png";
+import chefPi from "../../images/chefpi.png";
 import SearchBar from "./SearchBar";
-import { fridge } from "./fridge";
-import { fridgeDesktop } from "./fridgeDesktop";
-import { stock } from "./stockIngredients";
-import { stockDesktop } from "./stockIngredientsDesktop";
-import hoversound from "../audio/hovermecha.mp3";
-import clicksound from '../audio/clicksound.mp3'
+import { kitchen, kitchenDesk } from "./kitchen";
+import { stock, stockDesk } from "../stockIngredients";
+import hoversound from "../../audio/hovermecha.mp3";
+import clicksound from '../../audio/clicksound.mp3'
 let magGlassTarget, i;
 
 const hover = new Audio(hoversound);
@@ -18,7 +16,6 @@ const click = new Audio(clicksound);
 class IngredientsPage extends Component {
   state = {
     showIngredients: true,
-    ingredientsIngredients: [],
     ingredientsMeat: [],
     ingredientsFish: [],
     ingredientsVegetables: [],
@@ -28,7 +25,7 @@ class IngredientsPage extends Component {
     ingredientsHerbs: [],
     ingredientsSauces: [],
     finalIngredients: [],
-    finalIngredients2: [],
+    finalIngreDesk: [],
   };
   searchBarGlass = () => {
     magGlassTarget = document.querySelectorAll(".select__dropdown-indicator");
@@ -62,8 +59,10 @@ class IngredientsPage extends Component {
       ...this.state.ingredientsHerbs,
       ...this.state.ingredientsSauces,
     ];
+    console.log(allIngredients)
     this.setState({
       finalIngredients: stock.push(allIngredients),
+      finalIngreDesk: stockDesk.push(allIngredients),
     });
   };
   playHover = () => {
@@ -76,13 +75,6 @@ class IngredientsPage extends Component {
     click.play();
   }
 
-  // Desktop version below
-  getAllIngredients2 = () => {
-    let allIngredients2 = [...this.state.ingredientsIngredients];
-    this.setState({
-      finalIngredients2: stockDesktop.push(allIngredients2),
-    });
-  };
   render() {
     return (
       this.state.showIngredients && (
@@ -99,22 +91,21 @@ class IngredientsPage extends Component {
               />
             </div>
           </div>
+          {/*Mobile version*/}
           <section className="ingredients-section">
-            {fridge.list.map((fridgeChoice, index) => (
+            {kitchen.list.map((kitchenChoice) => (
               <>
-                <p className="categoryCss" key={`${index}-catName`}>{fridgeChoice.category}</p>
+                <p className="categoryCss">{kitchenChoice.category}</p>
                 <img
                   className="ingredients-image"
-                  key={`${index}-catImg`}
-                  src={fridgeChoice.image}
-                  alt={fridgeChoice.category}
+                  src={kitchenChoice.image}
+                  alt={kitchenChoice.category}
                 />
                 <div className="basic-multi-select">
                   <SearchBar
-                    key={`${index}-ingred`}
-                    list={fridgeChoice.ingredients}
+                    list={kitchenChoice.ingredients}
                     handleIngredientsChange={this.handleIngredientsChange}
-                    category={fridgeChoice.category}
+                    category={kitchenChoice.category}
                   />
                 </div>
               </>
@@ -123,10 +114,9 @@ class IngredientsPage extends Component {
           {/* Desktop version starts here */}
           <section className="ingredients-desktop">
             <div className="desktopWrapper">
-              {fridgeDesktop.list.map((fridgeChoice2, index) => (
                 <>
-                  <p className="IngrdntsPgTitleDesktop" key={`${index}-catNameDsk`}>
-                    {fridgeChoice2.category}
+                  <p className="IngrdntsPgTitleDesktop">
+                    Ingredients
                   </p>
                   <div
                     className="desktopSearchbar"
@@ -134,12 +124,13 @@ class IngredientsPage extends Component {
                     onMouseLeave={this.stopHover}
                     onClick={this.playClick}
                   >
+                    {kitchenDesk.list.map((selection) => (
                     <SearchBar
-                      list={fridgeChoice2.ingredients}
-                      key={`${index}-ingredDsk`}
+                      list={selection.ingredients}
                       handleIngredientsChange={this.handleIngredientsChange}
-                      category={fridgeChoice2.category}
+                      category={selection.category}
                     />
+                    ))}
                   </div>
                   <div className="bubbleTextDesktop">
                     <PokeBubbleTextDesktop
@@ -151,7 +142,6 @@ class IngredientsPage extends Component {
                     />
                   </div>
                 </>
-              ))}
               <div className="container-homeDesktop">
                 <button
                   className="deskIngredientsBtn"
@@ -159,7 +149,10 @@ class IngredientsPage extends Component {
                   onMouseLeave={this.stopHover}
                   onClick={this.props.toLoading}
                 >
-                  <span onClick={this.getAllIngredients2}>
+                  <span
+                  className="deskIngrdntsBtnSpan" 
+                  onClick={this.getAllIngredients}
+                  >
                     Recipes
                   </span>
                 </button>

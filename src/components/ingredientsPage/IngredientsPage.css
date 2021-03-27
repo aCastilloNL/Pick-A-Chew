@@ -2,7 +2,7 @@
 @media only screen and (max-width: 768px) and (min-width: 280px) {
   .ingredients {
     border-top: 1px solid transparent;
-    background: url("../images/ingredientsBg.jpg") no-repeat fixed;
+    background: url("../../images/ingredientsBg.jpg") no-repeat fixed;
     background-size: 100% 100%;
     min-height: 100vh;
   }
@@ -23,7 +23,7 @@
   .bubble-ingredients {
     width: 65%;
     background: rgba(255, 255, 255, 0.708);
-    background-image: url("../images/pokebubblebox.png");
+    background-image: url("../../images/pokebubblebox.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
@@ -125,22 +125,25 @@
 @media only screen and (min-width: 769px) and (max-width: 1920px) {
   @font-face {
     font-family: "hashedbrowns";
-    src: url("../fonts/HashedBrowns-WyJgn.ttf");
+    src: url("../../fonts/HashedBrowns-WyJgn.ttf");
   }
-  .ingredients-header {
-    display: none;
-  }
-  .ingredients-section {
-    display: none;
-  }
-  .ingredientsBtn {
-    display: none;
-  }
+  .ingredients-header,
+  .ingredients-section,
+  .ingredientsBtn,
   .ingrdntsBtnSpan {
     display: none;
   }
+  /* .ingredients-section {
+    display: none;
+  } */
+  /* .ingredientsBtn {
+    display: none;
+  } */
+  /* .ingrdntsBtnSpan {
+    display: none;
+  } */
   .ingredients-desktop {
-    background: white url("../images/ingredientsDesk.jpg") no-repeat fixed;
+    background: white url("../../images/ingredientsDesk.jpg") no-repeat fixed;
     background-size: 100% 100%;
     height: 100vh;
   }
@@ -177,7 +180,7 @@
     /* margin-bottom: 30px !important; */
   }
   .select__control:hover {
-      cursor: pointer;
+    cursor: pointer;
   }
   .select__multi-value {
     /* react select properties*/
@@ -196,6 +199,13 @@
     margin-bottom: 3%;
     border-radius: 30px;
     border: 2px solid black;
+    background: transparent;
+  }
+  .deskIngrdntsBtnSpan {
+    width: 99.9%;
+    height: 6vh;
+    border: none;
+    font-size: 16px;
     background: transparent;
   }
   .deskIngredientsBtn:hover {
