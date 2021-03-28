@@ -7,7 +7,7 @@
 ## Table of Contents
 - [About](#about)
 - [Install](#install)
-- [Packages and Softwares used](#packages)
+- [Packages](#packages)
 - [Developers](#developers)
 
 ## About
