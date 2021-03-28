@@ -47,9 +47,6 @@
   .carousel .control-dots {
     position: unset !important;
   }
-  .carousel .control-dots .dot {
-    color: white !important;
-  }
   .recipeStepsBox {
     background-color: antiquewhite;
     background-repeat: no-repeat;

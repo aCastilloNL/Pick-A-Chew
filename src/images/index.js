@@ -3,10 +3,10 @@ import dairyIcon from "./dairyIcon.png";
 import fishIcon from "./fishIcon.png";
 import fruitsIcon from "./fruitsIcon.png";
 import grainIcon from "./grainIcon.png";
-import grilledGoods from "./grilledGoods.png";
+import grilledGoodsBG from "./grilledGoods.png";
 import herbsSpice from "./herb&spiceIcon.png";
-import animeBG from "./homeBackground.gif";
-import cuisineDishBG from "./homeBackground.jpg";
+import animeHomeBG from "./homeBackground.gif";
+import foodsHomeBG from "./homeBackground.jpg";
 import ingredientsBGMob from "./ingredientsBG.jpg";
 import ingredientsBGDesk from "./ingredientsDesk.jpg";
 import loadingPika from "./loadingPika.jpg";
@@ -23,10 +23,10 @@ export default {
     fishIcon,
     fruitsIcon,
     grainIcon,
-    grilledGoods,
+    grilledGoodsBG,
     herbsSpice,
-    animeBG,
-    cuisineDishBG,
+    animeHomeBG,
+    foodsHomeBG,
     ingredientsBGMob,
     ingredientsBGDesk,
     loadingPika,
