@@ -78,7 +78,7 @@ class RecipeList extends Component {
       return (
         <div className="recipeListContainer">
           <p className="resultTitleDesktop">Recipes</p>
-          <h3 style={{ width: '100%', background: 'white', margin: '0'}}>Your choices:</h3>
+          <h3 className="choicesHeader" style={{ width: '100%', background: 'white', margin: '0'}}>Your choices:</h3>
           <p style={{ width: '100%', background: 'white'}}>{stock.toString().replace(/,/g, ", ")}</p> 
           <p style={{ width: '100%', background: 'white'}}>{stockDesk.toString().replace(/,/g, ", ")}</p>
           <Carousel showThumbs={false}>
