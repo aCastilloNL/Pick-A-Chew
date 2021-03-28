@@ -4,6 +4,9 @@ import "./RecipeList.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+let yourChoices;
+let sdReducer;
+
 class RecipeList extends Component {
   constructor(props) {
     super(props);
@@ -59,7 +62,7 @@ class RecipeList extends Component {
           items: json,
         });
       });
-      let stockCompressedesk= stockDesk.join()
+      let stockCompressedesk = stockDesk.join();
     fetch(`https://api.spoonacular.com/recipes/findByIngredients?apiKey=${process.env.REACT_APP_API_SPOONACULAR_KEY}&ingredients=${stockCompressedesk}&number=2`)
        .then(res => res.json())
       .then(json => {
@@ -68,6 +71,8 @@ class RecipeList extends Component {
           items: json
         })
       })
+      sdReducer = [].concat.apply([], stockDesk);
+      yourChoices = [...new Set(sdReducer)];
   }
 
   render() {
@@ -80,7 +85,7 @@ class RecipeList extends Component {
           <p className="resultTitleDesktop">Recipes</p>
           <h3 className="choicesHeader">Your choices:</h3>
           <p id="ingredientsMob">{stock.toString().replace(/,/g, ", ")}</p> 
-          <p id="ingredientsDesk">{stockDesk.toString().replace(/,/g, ", ")}</p>
+          <p id="ingredientsDesk">{yourChoices.toString().replace(/,/g, ", ")}</p>
           <Carousel showThumbs={false}>
             {items.map((item) => (
               <div className="recipeContainer" data-id={item.id}>
