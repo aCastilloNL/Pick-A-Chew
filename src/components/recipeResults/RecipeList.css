@@ -12,7 +12,7 @@
   #ingredientsMob {
     width: 90%;
     background: rgba(250, 250, 250, 0.858);
-    margin: 0 auto;
+    margin: 0 auto .5rem;
     padding-bottom: 0.8vh;
     border-bottom: 2px solid black;
   }
