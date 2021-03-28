@@ -24,11 +24,9 @@ class Result extends Component {
         <>
           <RecipeList />
         </>
-        {/* <div className="pikaContHome"> */}
           <button className="resultsButton" onClick={this.props.toIngre}>
             I forgot something
           </button>
-        {/* </div> */}
       </div>
     );
   }

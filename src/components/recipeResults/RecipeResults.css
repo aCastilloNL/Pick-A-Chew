@@ -9,12 +9,6 @@
     flex-flow: column nowrap;
     justify-content: space-evenly;
   }
-  .pikachu-results {
-    width: 30%;
-    background-color: rgba(255, 255, 255, 0.564);
-    border-radius: 100%;
-    border: solid black;
-  }
   .results-header {
     display: flex;
     flex-direction: row;
@@ -22,8 +16,15 @@
     margin-top: 1%;
     margin-bottom: 20px;
   }
+  .pikachu-results {
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.564);
+    border-radius: 100%;
+    border: solid black;
+  }
   .bubble-results {
     width: 65%;
+    height: auto;
     background-image: url("../../images/pokebubblebox.png");
     background-color: rgba(255, 255, 255, 0.584);
     background-repeat: no-repeat;
@@ -32,15 +33,14 @@
   .resultsButton {
     font-family: "Press Start 2P", cursive;
     width: 80%;
-    height: 50px;
+    height: 6vh;
     align-self: center;
     font-size: 15px;
-    background-color: rgba(219, 255, 254, 0.838);
+    background-color: rgba(255, 251, 219, 0.838);
     border-radius: 30px;
   }
 }
-/* desktop version starts here*/
-
+/* desktop*/
 @media only screen and (min-width: 769px) and (max-width: 1920px) {
   .pikachu-results, .bubble-results {
     display: none;
