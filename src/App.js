@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import HomePage from './components/homePage/HomePage'
 import Ingredients from './components/ingredientsPage/IngredientsPage'
-import Loading from './components/loading/Loading'
-import clicksound from './audio/clicksound.mp3'
-import './components/homePage/HomePage.css'
+import Loading from './components/loadingPage/Loading'
+import clicksound from './assets/audio/clicksound.mp3'
+import './styles/HomePage.css'
 
 const click = new Audio(clicksound);
 

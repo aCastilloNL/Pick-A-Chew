@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import PokeBubbleText from "../PokeBubbleTextIngredients";
-import PokeBubbleTextDesktop from "../PokeBubbleDesktop";
-import "./IngredientsPage.css";
-import chefPi from "../../images/chefpi.png";
+import PokeBubbleText from "../../assets/utils/PokeBubbleTextIngredients";
+import PokeBubbleTextDesktop from "../../assets/utils/PokeBubbleDesktop";
+import "../../styles/IngredientsPage.css";
+import chefPi from "../../assets/images/chefpi.png";
 import SearchBar from "./SearchBar";
 import { kitchen, kitchenDesk } from "./kitchen";
-import { stock, stockDesk } from "../stockIngredients";
-import hoversound from "../../audio/hovermecha.mp3";
-import clicksound from "../../audio/clicksound.mp3";
+import { stock, stockDesk } from "../../assets/utils/stockIngredients";
+import hoversound from "../../assets/audio/hovermecha.mp3";
+import clicksound from "../../assets/audio/clicksound.mp3";
 let magGlassTarget, i;
 
 const hover = new Audio(hoversound);

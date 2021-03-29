@@ -2,13 +2,13 @@
 @media only screen and (max-width: 768px) and (min-width: 280px) {
   @font-face {
     font-family: Pokemon Solid;
-    src: url("../../fonts/Pokemon\ Solid.ttf");
+    src: url("../fonts/Pokemon\ Solid.ttf");
   }
   body {
     background-color: rgb(248, 248, 196);
   }
   .home {
-    background-image: url("../../images/homeBackground.gif");
+    background-image: url("../assets/images/homeBackground.gif");
     background-position: center;
     background-size: contain;
     min-height: 100vh;
@@ -38,7 +38,7 @@
     flex-direction: column;
   }
   .typerDiv {
-    background-image: url("../../images/pokebubblebox.png");
+    background-image: url("../assets/images/pokebubblebox.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin: 0 15%;
@@ -104,11 +104,11 @@
 @media only screen and (min-width: 769px) {
   @font-face {
     font-family: "hashedbrowns";
-    src: url("../../fonts/HashedBrowns-WyJgn.ttf");
+    src: url("../fonts/HashedBrowns-WyJgn.ttf");
   }
   body {
     background-color: rgb(255, 255, 255);
-    background-image: url("../../images/homeBackground.jpg");
+    background-image: url("../assets/images/homeBackground.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

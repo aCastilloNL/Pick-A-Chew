@@ -1,11 +1,11 @@
-import meat from "../../images/meatIcon.png";
-import fish from "../../images/fishIcon.png";
-import vege from "../../images/vegetablesIcon.png";
-import fruit from "../../images/fruitsIcon.png";
-import dairy from "../../images/dairyIcon.png";
-import grain from "../../images/grainIcon.png";
-import herb from "../../images/herb&spiceIcon.png";
-import sauce from "../../images/sauceIcons.png";
+import meat from "../../assets/images/meatIcon.png";
+import fish from "../../assets/images/fishIcon.png";
+import vege from "../../assets/images/vegetablesIcon.png";
+import fruit from "../../assets/images/fruitsIcon.png";
+import dairy from "../../assets/images/dairyIcon.png";
+import grain from "../../assets/images/grainIcon.png";
+import herb from "../../assets/images/herb&spiceIcon.png";
+import sauce from "../../assets/images/sauceIcons.png";
 
 export const kitchen = {
     list: [

@@ -20,7 +20,7 @@
 }
 .recipeContainer {
   background-color: rgba(255, 255, 255, 0);
-  padding-bottom: 3.3rem;
+  padding-bottom: 0;
 }
 .carousel .slide {
   background-color: rgba(255, 255, 255, 0) !important;
@@ -35,6 +35,9 @@
   opacity: 0.8 !important;
   padding: 0% !important;
   bottom: 0% !important;
+  position: unset !important;
+  margin-top: 1vh;
+  margin-left: 0 !important;
 }
 .carousel .control-dots {
   position: unset !important;
@@ -121,16 +124,16 @@
     display: none;
   }
 }
-@media only screen and (max-width: 336px) {
+/* @media only screen and (max-width: 336px) {
   .span1 {
     font-size: 11px !important;
   }
-}
+} */
 /* desktop version starts here */
 @media only screen and (min-width: 769px) {
   @font-face {
     font-family: "hashedbrowns";
-    src: url("../../fonts/HashedBrowns-WyJgn.ttf");
+    src: url("../fonts/HashedBrowns-WyJgn.ttf");
   }
   .resultTitleDesktop {
     margin-top: 0;
@@ -159,6 +162,9 @@
     max-width: 40vw !important;
     margin-top: 3 !important;
     border-radius: 20px;
+  }
+  .carousel .control-dots {
+    position: unset !important;
   }
   .recipeContainer {
     padding-bottom: 0;

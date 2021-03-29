@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { stock, stockDesk } from "../stockIngredients";
-import "./RecipeList.css";
+import { stock, stockDesk } from "../../assets/utils/stockIngredients";
+import "../../styles/RecipeList.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
