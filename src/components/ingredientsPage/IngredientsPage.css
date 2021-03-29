@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@media only screen and (max-width: 768px) and (min-width: 280px) {
+@media only screen and (max-width: 768px) {
   .ingredients {
     border-top: 1px solid transparent;
     background: url("../../images/ingredientsBg.jpg") no-repeat fixed;
@@ -22,6 +22,7 @@
   }
   .bubble-ingredients {
     width: 65%;
+    min-width: 100px;
     background: rgba(255, 255, 255, 0.708);
     background-image: url("../../images/pokebubblebox.png");
     background-repeat: no-repeat;
@@ -47,9 +48,6 @@
     flex-direction: column;
     border-width: 50%;
   }
-  figcaption {
-    text-align: center;
-  }
   .categoryCss {
     font-family: "Press Start 2P", cursive;
     text-align: center;
@@ -67,7 +65,6 @@
     margin-bottom: 50px;
   }
   .ingredientsBtn {
-    /* font-family: "Press Start 2P", Roboto; */
     margin-top: 20px;
     margin-bottom: 50px;
     width: 80%;
@@ -122,7 +119,7 @@
   }
   /*Desktop version starts here*/
 }
-@media only screen and (min-width: 769px) and (max-width: 1920px) {
+@media only screen and (min-width: 769px) {
   @font-face {
     font-family: "hashedbrowns";
     src: url("../../fonts/HashedBrowns-WyJgn.ttf");
@@ -133,15 +130,6 @@
   .ingrdntsBtnSpan {
     display: none;
   }
-  /* .ingredients-section {
-    display: none;
-  } */
-  /* .ingredientsBtn {
-    display: none;
-  } */
-  /* .ingrdntsBtnSpan {
-    display: none;
-  } */
   .ingredients-desktop {
     background: white url("../../images/ingredientsDesk.jpg") no-repeat fixed;
     background-size: 100% 100%;
@@ -177,7 +165,6 @@
     /* react select properties*/
     border-radius: 30px !important;
     border: 2px solid black !important;
-    /* margin-bottom: 30px !important; */
   }
   .select__control:hover {
     cursor: pointer;
