@@ -41,7 +41,8 @@
   }
 }
 /* desktop*/
-@media only screen and (min-width: 769px) and (max-width: 1920px) {
+/* and (max-width: 1920px)   */
+@media only screen and (min-width: 769px){
   .pikachu-results, .bubble-results {
     display: none;
   }
