@@ -51,13 +51,13 @@
     background-size: 100% 100%;
     height: 100vh;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
+    flex-direction: column;
   }
   .carousel-root {
     display: flex;
     justify-content: center;
     border:1px solid red;
+    margin-top: 9vh;
   }
   .resultsButton {
     font-family: "Roboto";
