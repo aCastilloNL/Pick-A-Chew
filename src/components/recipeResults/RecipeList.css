@@ -18,7 +18,6 @@
   font-family: cursive;
 }
 .recipeContainer {
-  border: 1px solid blue;
   background-color: rgba(255, 255, 255, 0);
   padding-bottom: 3.3rem;
 }
@@ -152,22 +151,30 @@
     border-bottom: 2px solid black;
   }
   .carousel.carousel-slider {
-    border: 3px solid red;
     width: 40% !important;
-    max-width: 50vw;
+    max-width: 40vw !important;
     margin-top: 3 !important;
     border-radius: 20px;
+  }
+  .recipeContainer {
+    padding-bottom: 0;
+    margin-top: 1vh;
   }
   .legend {
     font-family: "Nerko One", cursive;
     color: black !important;
     margin-bottom: 0;
-    background-color: beige !important;
-    border: 1px solid black;
-  }
-  .carousel .slide .legend {
+    margin-top: 1vh;
+    margin-left: 0 !important;
     opacity: 0.8 !important;
     padding: 0% !important;
+    position: unset !important;
+    background-color: beige !important;
+    border: 1px solid green;
+  }
+  .carousel .slide img {
+    border: 2px solid black !important;
+    border-radius: 20px;
   }
   .ingredientsButton {
     border: none;
@@ -222,8 +229,8 @@
     color: black;
     margin-bottom: 3%;
   }
-  .span1 {
+  /* .span1 {
     font-family: "Nerko One", cursive;
     font-size: 15px;
-  }
+  } */
 }

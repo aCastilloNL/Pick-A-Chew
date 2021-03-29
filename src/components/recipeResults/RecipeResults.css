@@ -41,7 +41,6 @@
   }
 }
 /* desktop*/
-/* and (max-width: 1920px)   */
 @media only screen and (min-width: 769px){
   .pikachu-results, .bubble-results {
     display: none;
@@ -51,21 +50,23 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
   }
   .carousel-root {
     display: flex;
     justify-content: center;
+    border:1px solid red;
   }
   .resultsButton {
     font-family: "Roboto";
     font-size: 17px;
-    position: absolute;
-    left: 35.3%;
-    bottom: 10%;
     width: 30%;
-    height: 6vh;
+    height: 5vh;
     border-radius: 30px;
     border: 1px solid black;
     background-color: transparent;
+    margin: auto;
   }
 }
