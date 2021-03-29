@@ -1,8 +1,10 @@
+.recipeListContainer {
+  overflow: auto;
+}
 .choicesHeader {
   background: rgba(255, 255, 255, 0.858);
   border-top: 2px solid black;
   margin: 0 auto;
-  padding-top: 0.4vh;
   padding-left: 0.5rem;
   width: 89.2%;
   font-family: cursive;
@@ -124,11 +126,6 @@
     display: none;
   }
 }
-/* @media only screen and (max-width: 336px) {
-  .span1 {
-    font-size: 11px !important;
-  }
-} */
 /* desktop version starts here */
 @media only screen and (min-width: 769px) {
   @font-face {

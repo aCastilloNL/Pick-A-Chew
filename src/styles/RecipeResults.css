@@ -41,8 +41,10 @@
   }
 }
 /* desktop*/
-@media only screen and (min-width: 769px){
-  .pikachu-results, .bubble-results, .carousel-status {
+@media only screen and (min-width: 769px) {
+  .pikachu-results,
+  .bubble-results,
+  .carousel-status {
     display: none;
   }
   .results {
@@ -62,10 +64,17 @@
     font-family: "Roboto";
     font-size: 17px;
     width: 250px;
-    height: 5vh;
+    padding: 1vh;
     border-radius: 30px;
     border: 1px solid black;
     background-color: transparent;
-    margin: auto;
+    margin: 1rem auto;
   }
 }
+/* @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+  .results {
+    background-image: url("../assets/images/recipeResults.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+} */
