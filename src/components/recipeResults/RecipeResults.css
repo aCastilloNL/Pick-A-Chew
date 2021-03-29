@@ -42,7 +42,7 @@
 }
 /* desktop*/
 @media only screen and (min-width: 769px){
-  .pikachu-results, .bubble-results {
+  .pikachu-results, .bubble-results, .carousel-status {
     display: none;
   }
   .results {
@@ -56,13 +56,12 @@
   .carousel-root {
     display: flex;
     justify-content: center;
-    border:1px solid red;
     margin-top: 9vh;
   }
   .resultsButton {
     font-family: "Roboto";
     font-size: 17px;
-    width: 30%;
+    width: 250px;
     height: 5vh;
     border-radius: 30px;
     border: 1px solid black;

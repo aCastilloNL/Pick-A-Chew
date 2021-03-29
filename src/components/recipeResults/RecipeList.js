@@ -90,7 +90,7 @@ class RecipeList extends Component {
             {items.map((item) => (
               <div className="recipeContainer" data-id={item.id}>
               <>
-                <img src={item.image} className="recipeImg" alt="images" />
+                <img src={`https://spoonacular.com/recipeImages/${item.id}-636x393.${item.imageType}`} className="recipeImg" alt="images" />
                 <button
                 className="legend"
                 onClick={() => this.displayRecipeBox(item.id)}
