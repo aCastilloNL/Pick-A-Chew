@@ -8,6 +8,35 @@
   font-size: 3vh;
   font-weight: 100;
 }
+.legend {
+  color: black !important;
+  margin-bottom: 0;
+  background-color: rgb(255, 255, 255) !important;
+  border: 1px solid black;
+  width: 100%;
+  font-size: 2.4vh !important;
+  font-family: cursive;
+}
+.recipeContainer {
+  border: 1px solid blue;
+  background-color: rgba(255, 255, 255, 0);
+  padding-bottom: 3.3rem;
+}
+.carousel .slide {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+.carousel .slide img {
+  border-top: 3px solid white !important;
+  border-bottom: 3px solid white !important;
+}
+.carousel .slide .legend {
+  opacity: 0.8 !important;
+  padding: 0% !important;
+  bottom: 0% !important;
+}
+.carousel .control-dots {
+  position: unset !important;
+}
 @media only screen and (max-width: 768px) and (min-width: 280px) {
   #ingredientsMob {
     width: 90%;
@@ -18,34 +47,6 @@
   }
   .carousel .thumbs-wrapper {
     display: none !important;
-  }
-  .legend {
-    color: black !important;
-    margin-bottom: 0;
-    background-color: rgb(255, 255, 255) !important;
-    border: 1px solid black;
-    width: 100%;
-    font-size: 2.4vh !important;
-    font-family: cursive;
-  }
-  .recipeContainer {
-    background-color: rgba(255, 255, 255, 0);
-    padding-bottom: 3.3rem;
-  }
-  .carousel .slide {
-    background-color: rgba(255, 255, 255, 0) !important;
-  }
-  .carousel .slide img {
-    border-top: 3px solid white !important;
-    border-bottom: 3px solid white !important;
-  }
-  .carousel .slide .legend {
-    opacity: 0.8 !important;
-    padding: 0% !important;
-    bottom: 0% !important;
-  }
-  .carousel .control-dots {
-    position: unset !important;
   }
   .recipeStepsBox {
     background-color: antiquewhite;
@@ -122,7 +123,6 @@
     font-size: 11px !important;
   }
 }
-
 /* desktop version starts here */
 /* and (max-width: 1920px)  */
 @media only screen and (min-width: 769px) {
@@ -153,9 +153,6 @@
   }
   .carousel.carousel-slider {
     border: 3px solid red;
-    /* position: absolute; */
-    /* top: 0.5rem;
-    left: 30%; */
     width: 40% !important;
     max-width: 50vw;
     margin-top: 3 !important;
