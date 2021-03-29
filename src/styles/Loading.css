@@ -8,16 +8,14 @@
     min-height: 100vh;
   }
   .bubble-loading {
+    text-align: center;
     font-size: 23px !important;
     color: white;
   }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1920px) {
-  .loading {
-    display: none;
-  }
-  .bubble-loading {
+  .loading, .bubble-loading  {
     display: none;
   }
 }
