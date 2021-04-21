@@ -11,7 +11,7 @@
 - [Developers](#developers)
 
 ## About
-This project is a Recipe Finder app/site that helps users find food recipes and step-by-step instructions with the ingredients available in their own kitchen. It was originally developed by a team trio consisting of myself and two other developers during my 2nd month as a Wild Code School student. After the program ended in March 2021, I revisited the project to update, reformat and clean several parts of the code in an attempt to enhance it's performance along with making it more visually pleasing and user-friendly. It is built with React.js and the Spoonacular Recipe and Food API. It was a lot of fun working on it.
+This project is a Recipe Finder app/site that helps users find food recipes and step-by-step instructions with the ingredients available in their own kitchen. It was originally developed by a team trio consisting of myself and two other developers during my 2nd month as a Wild Code School student. After the program ended in March 2021, I revisited the project to update, reformat and clean several parts of the code in an attempt to enhance it's performance along with making it more visually pleasing and user-friendly. It is built with React.js and the Spoonacular Recipe and Food API. It was a lot of fun and very educational.
 
 ## Install
 ```bash
