@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { stock, stockDesk } from "../../assets/utils/stockIngredients";
-import "../../styles/RecipeList.css";
+import { stock, stockDesk } from "../assets/utils/stockIngredients";
+import "../styles/RecipeList.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -28,7 +28,6 @@ class RecipeList extends Component {
         return result.json();
       })
       .then((data) => {
-        // let recipeInfo = data.length ? data[0].steps : [];
         let recipeIngredients = data.extendedIngredients.map((number) => {
           return number.original;
         });

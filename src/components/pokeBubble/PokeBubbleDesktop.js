@@ -5,9 +5,6 @@ let deletingTimeOut;
 let mainTimeOut;
 
 class PokeBubbleTextDesktop extends Component {
-  // static defProps = {
-  //   textData: [],
-  // };
 
   state = {
     text: "",

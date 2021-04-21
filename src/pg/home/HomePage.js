@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import "../../styles/HomePage.css";
-import PokeBubbleText from "../../assets/utils/PokebubbleTextHome";
-import pikachuHome from "../../assets/images/pikachuHome.gif";
-import pikaChef from "../../assets/images/chefpi.png";
-import hoversound from "../../assets/audio/hovermecha.mp3";
+import PokeBubbleText from "../../components/pokeBubble/PokebubbleTextHome";
+import hoversound from "../../assets/aud/hovermecha.mp3";
+import images from "../../assets/img";
 
 const hover = new Audio(hoversound);
 let counter = 0;
@@ -59,10 +58,10 @@ class HomePage extends Component {
               <span>We've got you covered.</span>
               <span>Let's find a cuisine.</span>
             </h5>
-            <img id="deskPika" src={pikaChef} alt="Chef Pikachu" />
+            <img id="deskPika" src={images.chefPika} alt="Chef Pikachu" />
           </>
           <div className="pikaContHome">
-            <img className="pikachuHome" alt="pikachu" src={pikachuHome} />
+            <img className="pikachuHome" alt="pikachu" src={images.pikachuHome} />
             <div className="typerDiv">
               <PokeBubbleText
                 stopCounter={200}

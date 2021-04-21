@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import HomePage from './components/homePage/HomePage'
-import Ingredients from './components/ingredientsPage/IngredientsPage'
-import Loading from './components/loadingPage/Loading'
-import clicksound from './assets/audio/clicksound.mp3'
+import HomePage from './pg/home/HomePage'
+import Ingredients from './pg/ingredients/IngredientsPage'
+import Loading from './components/Loading'
+import clicksound from './assets/aud/clicksound.mp3'
 import './styles/HomePage.css'
 
 const click = new Audio(clicksound);

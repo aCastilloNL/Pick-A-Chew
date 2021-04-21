@@ -1,17 +1,10 @@
-import meat from "../../assets/images/meatIcon.png";
-import fish from "../../assets/images/fishIcon.png";
-import vege from "../../assets/images/vegetablesIcon.png";
-import fruit from "../../assets/images/fruitsIcon.png";
-import dairy from "../../assets/images/dairyIcon.png";
-import grain from "../../assets/images/grainIcon.png";
-import herb from "../../assets/images/herb&spiceIcon.png";
-import sauce from "../../assets/images/sauceIcons.png";
+import images from "../img";
 
 export const kitchen = {
     list: [
       {
         category: "Meat",
-        image: meat,
+        image: images.meat,
         ingredients: [
           {
             value: "Beef",
@@ -57,7 +50,7 @@ export const kitchen = {
       },
       {
         category: "Fish",
-        image: fish,
+        image: images.fish,
         ingredients: [
           {
             value: "Salmon",
@@ -133,7 +126,7 @@ export const kitchen = {
       },
       {
         category: "Vegetables",
-        image: vege,
+        image: images.vegetables,
         ingredients: [
           {
             value: "Tomato",
@@ -249,7 +242,7 @@ export const kitchen = {
       },
       {
         category: "Fruits",
-        image: fruit,
+        image: images.fruits,
         ingredients: [
           {
             value: "Banana",
@@ -355,7 +348,7 @@ export const kitchen = {
       },
       {
         category: "Dairy",
-        image: dairy,
+        image: images.dairy,
         ingredients: [
           {
             value: "Butter",
@@ -396,7 +389,7 @@ export const kitchen = {
       },
       {
         category: "Grains",
-        image: grain,
+        image: images.grain,
         ingredients: [
           {
             value: "Pasta",
@@ -442,7 +435,7 @@ export const kitchen = {
       },
       {
         category: "Herbs",
-        image: herb,
+        image: images.herbsSpice,
         ingredients: [
           {
             value: "Salt",
@@ -538,7 +531,7 @@ export const kitchen = {
       },
       {
         category: "Sauces",
-        image: sauce,
+        image: images.sauce,
         ingredients: [
           {
             value: "Mayonnaise",

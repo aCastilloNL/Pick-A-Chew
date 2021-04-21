@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Result from "../recipeResults/RecipeResults";
-import PokeBubbleText from "../../assets/utils/PokeBubbleTextIngredients";
-import "../../styles/Loading.css";
+import Result from "../pg/results/RecipeResults";
+import PokeBubbleText from "./pokeBubble/PokeBubbleTextIngredients";
+import "../styles/Loading.css";
 
 class Loading extends Component {
   constructor() {

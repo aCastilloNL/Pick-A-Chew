@@ -17,7 +17,7 @@
   background-color: rgb(255, 255, 255) !important;
   border: 1px solid black;
   width: 100%;
-  font-size: 1.3rem !important;
+  font-size: 1.1rem !important;
   font-family: cursive;
 }
 .recipeContainer {
@@ -130,7 +130,7 @@
 @media only screen and (min-width: 769px) {
   @font-face {
     font-family: "hashedbrowns";
-    src: url("../fonts/HashedBrowns-WyJgn.ttf");
+    src: url("../assets/font/HashedBrowns-WyJgn.ttf");
   }
   .resultTitleDesktop {
     margin-top: 0;

@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import "../../styles/RecipeResults.css";
-import RecipeList from "./RecipeList";
-import PokeBubbleText from "../../assets/utils/PokeBubbleTextIngredients";
-import chefPi from "../../assets/images/chefpi.png";
+import RecipeList from "../../components/RecipeList";
+import PokeBubbleText from "../../components/pokeBubble/PokeBubbleTextIngredients";
+import images from "../../assets/img";
 
 class Result extends Component {
   render() {
     return (
       <div className="results">
-        <div className="results-header">
-          <img className="pikachu-results" src={chefPi} alt="pikachu" />
+        <header className="results-header">
+          <img className="pikachu-results" src={images.chefPika} alt="pikachu" />
           <div className="bubble-results">
             <PokeBubbleText
               stopCounter={171}
@@ -20,7 +20,7 @@ class Result extends Component {
               ]}
             />
           </div>
-        </div>
+        </header>
         <>
           <RecipeList />
         </>
