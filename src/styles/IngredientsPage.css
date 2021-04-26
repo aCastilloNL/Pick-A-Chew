@@ -29,7 +29,7 @@
     background-size: 100% 100%;
   }
   .bubbleTextIngredients {
-    width: 57vw;
+    /* width: 57vw; */
     font-family: "Press Start 2P", cursive;
     font-size: 90%;
     padding-left: 7%;
