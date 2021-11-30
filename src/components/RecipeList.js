@@ -22,7 +22,7 @@ class RecipeList extends Component {
 
   displayRecipeBox = (id) => {
     fetch(
-      `https://api.spoonacular.com/recipes/${id}/information?apiKey=${process.env.REACT_APP_API_SPOONACULAR_KEY}`
+      `https://api.spoonacular.com/recipes/${id}/information?apiKey=${apiKey}`
     )
       .then((result) => {
         return result.json();
@@ -52,7 +52,7 @@ class RecipeList extends Component {
   componentDidMount() {
     let stockCompressed = stock.join();
     fetch(
-      `https://api.spoonacular.com/recipes/findByIngredients?apiKey=${process.env.REACT_APP_API_SPOONACULAR_KEY}&ingredients=${stockCompressed}&number=3`
+      `https://api.spoonacular.com/recipes/findByIngredients?apiKey=${apiKey}&ingredients=${stockCompressed}&number=3`
     )
       .then((res) => res.json())
       .then((json) => {
@@ -61,17 +61,19 @@ class RecipeList extends Component {
           items: json,
         });
       });
-      let stockCompressedesk = stockDesk.join();
-    fetch(`https://api.spoonacular.com/recipes/findByIngredients?apiKey=${process.env.REACT_APP_API_SPOONACULAR_KEY}&ingredients=${stockCompressedesk}&number=2`)
-       .then(res => res.json())
-      .then(json => {
-         this.setState({
+    let stockCompressedesk = stockDesk.join();
+    fetch(
+      `https://api.spoonacular.com/recipes/findByIngredients?apiKey=${apiKey}&ingredients=${stockCompressedesk}&number=2`
+    )
+      .then((res) => res.json())
+      .then((json) => {
+        this.setState({
           isLoaded: true,
-          items: json
-        })
-      })
-      sdReducer = [].concat.apply([], stockDesk);
-      yourChoices = [...new Set(sdReducer)];
+          items: json,
+        });
+      });
+    sdReducer = [].concat.apply([], stockDesk);
+    yourChoices = [...new Set(sdReducer)];
   }
 
   render() {
@@ -83,17 +85,25 @@ class RecipeList extends Component {
         <div className="recipeListContainer">
           <p className="resultTitleDesktop">Recipes</p>
           <h3 className="choicesHeader">Your choices:</h3>
-          <p id="ingredientsMob">{stock.toString().replace(/,/g, ", ")}</p> 
-          <p id="ingredientsDesk">{yourChoices.toString().replace(/,/g, ", ")}</p>
+          <p id="ingredientsMob">{stock.toString().replace(/,/g, ", ")}</p>
+          <p id="ingredientsDesk">
+            {yourChoices.toString().replace(/,/g, ", ")}
+          </p>
           <Carousel showThumbs={false}>
             {items.map((item) => (
               <div className="recipeContainer" data-id={item.id}>
-              <>
-                <img src={`https://spoonacular.com/recipeImages/${item.id}-636x393.${item.imageType}`} className="recipeImg" alt="images" />
-                <button
-                className="legend"
-                onClick={() => this.displayRecipeBox(item.id)}
-                >{item.title}</button>
+                <>
+                  <img
+                    src={`https://spoonacular.com/recipeImages/${item.id}-636x393.${item.imageType}`}
+                    className="recipeImg"
+                    alt="images"
+                  />
+                  <button
+                    className="legend"
+                    onClick={() => this.displayRecipeBox(item.id)}
+                  >
+                    {item.title}
+                  </button>
                 </>
               </div>
             ))}
@@ -118,13 +128,18 @@ class RecipeList extends Component {
               {this.state.steps.length ? (
                 this.state.steps[0].map((currElement) => (
                   <div>
-                    <h3 className="stepInstruction"> Step {currElement.number} </h3>
+                    <h3 className="stepInstruction">
+                      {" "}
+                      Step {currElement.number}{" "}
+                    </h3>
                     <p className="stepStyle">{currElement.step}</p>
                   </div>
                 ))
               ) : (
                 <div>
-                  <h2>We're sorry, this recipe is not available at the moment...</h2>
+                  <h2>
+                    We're sorry, this recipe is not available at the moment...
+                  </h2>
                 </div>
               )}
               <button className="recipeButton" onClick={this.closeRecipeBox}>
