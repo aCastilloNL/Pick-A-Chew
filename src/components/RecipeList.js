@@ -22,7 +22,7 @@ class RecipeList extends Component {
 
   displayRecipeBox = (id) => {
     fetch(
-      `https://api.spoonacular.com/recipes/${id}/information?apiKey=${apiKey}`
+      `https://api.spoonacular.com/recipes/${id}/information?apiKey=${process.env.REACT_APP_API_SPOONACULAR_KEY}`
     )
       .then((result) => {
         return result.json();
@@ -52,7 +52,7 @@ class RecipeList extends Component {
   componentDidMount() {
     let stockCompressed = stock.join();
     fetch(
-      `https://api.spoonacular.com/recipes/findByIngredients?apiKey=${apiKey}&ingredients=${stockCompressed}&number=3`
+      `https://api.spoonacular.com/recipes/findByIngredients?apiKey=${process.env.REACT_APP_API_SPOONACULAR_KEY}&ingredients=${stockCompressed}&number=3`
     )
       .then((res) => res.json())
       .then((json) => {
@@ -63,7 +63,7 @@ class RecipeList extends Component {
       });
     let stockCompressedesk = stockDesk.join();
     fetch(
-      `https://api.spoonacular.com/recipes/findByIngredients?apiKey=${apiKey}&ingredients=${stockCompressedesk}&number=2`
+      `https://api.spoonacular.com/recipes/findByIngredients?apiKey=${process.env.REACT_APP_API_SPOONACULAR_KEY}&ingredients=${stockCompressedesk}&number=2`
     )
       .then((res) => res.json())
       .then((json) => {
