@@ -7,6 +7,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 let yourChoices;
 let sdReducer;
 
+<pre>{JSON.stringify(process.env, undefined, 2)}</pre>;
+
 class RecipeList extends Component {
   constructor(props) {
     super(props);
