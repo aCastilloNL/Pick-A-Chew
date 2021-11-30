@@ -26,6 +26,6 @@ $ yarn install
 - React Select
 
 ## Developed by
-- Fabien Lallement https://github.com/Befa222
 - Alfred Castillo https://github.com/aCastilloNL
+- Fabien Lallement https://github.com/Befa222
 - Jeanloup Cayuela https://github.com/j-loup30400
